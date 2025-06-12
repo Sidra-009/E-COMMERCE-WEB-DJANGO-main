@@ -1,0 +1,16 @@
+asgiref
+certifi
+# charset-normalizer==2.0.4
+Django 
+# django-paypal==1.1.1
+# idna==3.2
+Pillow
+# psycopg2 
+pytz 
+requests
+# six==1.16.0
+sqlparse 
+django_extensions
+typing-extensions 
+# urllib3==1.26.6
+# wincertstore==0.2

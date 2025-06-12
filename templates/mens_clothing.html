@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection | Premium Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #5223c1;
+            --accent-color: #fd79a8;
+            --dark-color: #2d3436;
+            --light-color: #f5f6fa;
+            --success-color: #00b894;
+            --danger-color: #d63031;
+            --warning-color: #fdcb6e;
+            --info-color: #0984e3;
+            --text-dark: #2d3748;
+            --text-light: #f8fafc;
+            --text-muted: #718096;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.05);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.05);
+            --transition-base: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-slow: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            --border-radius-full: 9999px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: #f8fafc;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Banner Section */
+        .banner-section {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+
+        .banner-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .banner-content {
+            max-width: 800px;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .banner-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .banner-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .banner-btn {
+            padding: 12px 30px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-base);
+            display: inline-block;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+            border: none;
+            cursor: pointer;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(108, 92, 231, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
+            }
+        }
+
+        .banner-btn:hover {
+            background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            animation: none;
+        }
+
+        /* Filter/Sort Bar */
+        .filter-bar {
+            background: white;
+            padding: 15px 0;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .filter-select {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius-md);
+            font-family: inherit;
+            background: white;
+            min-width: 150px;
+            transition: var(--transition-base);
+        }
+
+        .filter-select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .product-card {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-base);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: cardEntrance 0.5s ease-out forwards;
+            cursor: pointer;
+        }
+
+        @keyframes cardEntrance {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-card:nth-child(1) { animation-delay: 0.1s; }
+        .product-card:nth-child(2) { animation-delay: 0.2s; }
+        .product-card:nth-child(3) { animation-delay: 0.3s; }
+        .product-card:nth-child(4) { animation-delay: 0.4s; }
+        .product-card:nth-child(5) { animation-delay: 0.5s; }
+        .product-card:nth-child(6) { animation-delay: 0.6s; }
+        .product-card:nth-child(7) { animation-delay: 0.7s; }
+        .product-card:nth-child(8) { animation-delay: 0.8s; }
+
+        .product-card:hover {
+            transform: translateY(-5px) rotateY(5deg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 3px 10px;
+            border-radius: var(--border-radius-full);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: white;
+            z-index: 2;
+            animation: badgePulse 2s infinite;
+        }
+
+        @keyframes badgePulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .badge-new {
+            background: var(--info-color);
+        }
+
+        .badge-sale {
+            background: var(--danger-color);
+        }
+
+        .badge-bestseller {
+            background: var(--success-color);
+        }
+
+        .badge-trending {
+            background: var(--warning-color);
+            color: var(--dark-color);
+        }
+
+        .product-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-base);
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            padding: 15px;
+            border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+        }
+
+        .product-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .current-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .original-price {
+            font-size: 0.9rem;
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .discount {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--danger-color);
+            background: rgba(255, 117, 140, 0.1);
+            padding: 2px 6px;
+            border-radius: var(--border-radius-full);
+        }
+
+        .product-rating {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 0.8rem;
+        }
+
+        .rating-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: var(--transition-base);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .add-to-cart:hover {
+            background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Section Titles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: var(--border-radius-full);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* See All/Less Button */
+        .see-more-btn {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            text-align: center;
+        }
+
+        .see-more-btn:hover {
+            background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Product Modal */
+        .product-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-slow);
+        }
+
+        .product-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(50px);
+            transition: var(--transition-slow);
+            position: relative;
+        }
+
+        .product-modal.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: var(--danger-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+            border: none;
+            font-size: 1.2rem;
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 992px) {
+            .modal-body {
+                flex-direction: row;
+            }
+        }
+
+        .modal-images {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: var(--border-radius-md);
+        }
+
+        .modal-details {
+            flex: 1;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .modal-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .modal-original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: var(--text-muted);
+            margin-right: 10px;
+        }
+
+        .modal-discount {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--danger-color);
+            background: rgba(255, 117, 140, 0.1);
+            padding: 3px 8px;
+            border-radius: var(--border-radius-full);
+        }
+
+        .modal-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .modal-stars {
+            color: #ffc107;
+        }
+
+        .modal-reviews {
+            color: var(--text-muted);
+        }
+
+        .modal-description {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .modal-features {
+            margin-bottom: 25px;
+        }
+
+        .modal-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .modal-features li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .modal-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .modal-btn {
+            padding: 12px 25px;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .modal-btn-primary {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            flex: 1;
+        }
+
+        .modal-btn-primary:hover {
+            background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .modal-btn-secondary {
+            background: white;
+            color: var(--dark-color);
+            border: 1px solid #ddd;
+        }
+
+        .modal-btn-secondary:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .banner-title {
+                font-size: 2.5rem;
+            }
+            
+            .banner-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .modal-price {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner-section {
+                height: 400px;
+            }
+            
+            .filter-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .modal-body {
+                flex-direction: column;
+            }
+
+            .main-image {
+                height: 300px;
+            }
+
+            .modal-actions {
+                flex-direction: column;
+            }
+
+            .modal-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-section {
+                height: 300px;
+            }
+            
+            .banner-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .modal-details {
+                padding: 20px;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -468px 0; }
+            100% { background-position: 468px 0; }
+        }
+
+        .skeleton {
+            animation: shimmer 1.5s infinite linear;
+            background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+            background-size: 800px 104px;
+            position: relative;
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: linear-gradient(45deg, var(--dark-color), var(--primary-color));
+            transform: translateY(-3px);
+        }
+
+        /* Cart notification */
+        .cart-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--success-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+        }
+
+        .cart-notification.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Sale Popup */
+        .sale-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: var(--shadow-xl);
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-slow);
+            text-align: center;
+        }
+
+        .sale-popup.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .sale-popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .sale-popup h3 {
+            font-size: 1.8rem;
+            color: var(--danger-color);
+            margin-bottom: 15px;
+        }
+
+        .sale-popup p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .sale-popup-btn {
+            padding: 12px 30px;
+            background: linear-gradient(45deg, var(--danger-color), #e84393);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+
+        .sale-popup-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-slow);
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <!-- Video Banner Section -->
+    <section class="banner-section">
+        <video autoplay muted loop class="banner-video">
+            <source src="https://videos.pexels.com/video-files/7680123/7680123-sd_960_506_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <h1 class="banner-title">Men's Collection</h1>
+                <p class="banner-subtitle">Discover premium fashion for the modern gentleman. Handcrafted with excellence, designed for comfort.</p>
+                <a href="#trending" class="banner-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Filter/Sort Bar -->
+        <div class="filter-bar">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <span class="filter-label">Sort By:</span>
+                    <select class="filter-select" id="sort-by">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <span class="filter-label">Filter By:</span>
+                    <select class="filter-select" id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="jeans">Jeans</option>
+                        <option value="shirts">Shirts</option>
+                        <option value="suits">Suits</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                    
+                    <select class="filter-select" id="filter-price">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">Under $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-200">$100 - $200</option>
+                        <option value="200+">$200+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trending Products -->
+        <section id="trending">
+            <div class="section-header">
+                <h2 class="section-title">Trending Now</h2>
+                <p class="section-subtitle">Discover our most popular items this season</p>
+            </div>
+            <div class="product-grid" id="trending-products">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <button class="see-more-btn" data-section="trending">See All</button>
+        </section>
+
+        <!-- New Arrivals -->
+        <section id="new-arrivals">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">Fresh styles just added to our collection</p>
+            </div>
+            <div class="product-grid" id="new-arrivals-products">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <button class="see-more-btn" data-section="new-arrivals">See All</button>
+        </section>
+
+        <!-- Bestsellers -->
+        <section id="bestsellers">
+            <div class="section-header">
+                <h2 class="section-title">Bestsellers</h2>
+                <p class="section-subtitle">Customer favorites that never go out of style</p>
+            </div>
+            <div class="product-grid" id="bestseller-products">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <button class="see-more-btn" data-section="bestsellers">See All</button>
+        </section>
+
+        <!-- Featured Collection -->
+        <section id="featured">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Curated selection of our finest products</p>
+            </div>
+            <div class="product-grid" id="featured-products">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <button class="see-more-btn" data-section="featured">See All</button>
+        </section>
+    </div>
+    {% include 'footer.html' %}
+    
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationText">Product added to cart!</span>
+    </div>
+
+    <!-- Sale Popup -->
+    <div class="overlay" id="saleOverlay"></div>
+    <div class="sale-popup" id="salePopup">
+        <button class="sale-popup-close" id="salePopupClose">&times;</button>
+        <h3>SPECIAL OFFER!</h3>
+        <p>Get 30% off on all items for the next 24 hours. Use code <strong>FLASH30</strong> at checkout.</p>
+        <p>Hurry, this offer ends soon!</p>
+        <button class="sale-popup-btn" id="salePopupBtn">Shop Now</button>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Product Data (with working image URLs)
+        const products = [
+            { 
+                id: 1, 
+                title: "Slim Fit Denim Jeans", 
+                price: 59.99, 
+                originalPrice: 79.99, 
+                category: "jeans", 
+                rating: 4.5, 
+                reviews: 128, 
+                badge: "trending", 
+                image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-05-15", 
+                sales: 342,
+                description: "Premium slim fit jeans with stretch for all-day comfort. Made from high-quality denim that maintains its shape wash after wash. Perfect for both casual and smart casual occasions.",
+                features: [
+                    "98% Cotton, 2% Elastane for comfort and stretch",
+                    "Slim fit through thigh and leg",
+                    "Mid-rise waist with five-pocket styling",
+                    "Zip fly with button closure",
+                    "Machine wash cold, tumble dry low"
+                ]
+            },
+            { 
+                id: 2, 
+                title: "Regular Fit Bootcut Jeans", 
+                price: 49.99, 
+                originalPrice: 69.99, 
+                category: "jeans", 
+                rating: 4.2, 
+                reviews: 95, 
+                badge: "sale", 
+                image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-06-20", 
+                sales: 278,
+                description: "Classic bootcut jeans with comfortable regular fit. Designed to pair perfectly with boots while providing a timeless silhouette.",
+                features: [
+                    "100% Cotton denim for durability",
+                    "Regular fit through seat and thigh",
+                    "Bootcut leg opening",
+                    "Mid-rise waist with belt loops",
+                    "Five-pocket styling"
+                ]
+            },
+            { 
+                id: 3, 
+                title: "Distressed Skinny Jeans", 
+                price: 54.99, 
+                category: "jeans", 
+                rating: 4.3, 
+                reviews: 156, 
+                badge: "new", 
+                image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-07-10", 
+                sales: 189,
+                description: "Edgy distressed skinny jeans with strategic rips and tears for a contemporary streetwear look. Stretch fabric ensures comfort all day long.",
+                features: [
+                    "98% Cotton, 2% Elastane for stretch",
+                    "Skinny fit throughout",
+                    "Low-rise waist with zip fly",
+                    "Distressed detailing with rips at knees",
+                    "Five-pocket styling"
+                ]
+            },
+            { 
+                id: 4, 
+                title: "Classic Straight Jeans", 
+                price: 44.99, 
+                category: "jeans", 
+                rating: 4.7, 
+                reviews: 210, 
+                badge: "bestseller", 
+                image: "https://images.unsplash.com/photo-1475178626620-a4d074967452?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-04-05", 
+                sales: 425,
+                description: "Timeless straight-leg jeans for everyday wear. The perfect balance between relaxed and fitted for maximum comfort and style.",
+                features: [
+                    "100% Cotton denim for classic feel",
+                    "Straight leg fit from thigh to hem",
+                    "Mid-rise waist with button closure",
+                    "Five-pocket styling",
+                    "Versatile for all occasions"
+                ]
+            },
+            { 
+                id: 5, 
+                title: "Premium Oxford Shirt", 
+                price: 39.99, 
+                originalPrice: 59.99, 
+                category: "shirts", 
+                rating: 4.6, 
+                reviews: 178, 
+                badge: "bestseller", 
+                image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-03-12", 
+                sales: 387,
+                description: "Classic Oxford shirt in premium cotton. The perfect balance between casual and formal, making it ideal for both office and weekend wear.",
+                features: [
+                    "100% premium cotton Oxford fabric",
+                    "Button-down collar for classic style",
+                    "Regular fit for comfort",
+                    "Single chest pocket",
+                    "Machine washable"
+                ]
+            },
+            { 
+                id: 6, 
+                title: "Slim Fit Linen Shirt", 
+                price: 49.99, 
+                category: "shirts", 
+                rating: 4.4, 
+                reviews: 132, 
+                badge: "trending", 
+                image: "https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-06-15", 
+                sales: 254,
+                description: "Breathable linen shirt with slim fit for a tailored look. Perfect for summer days and warm weather occasions.",
+                features: [
+                    "100% premium linen fabric",
+                    "Slim fit for modern silhouette",
+                    "Button-down collar",
+                    "Single chest pocket",
+                    "Machine wash cold, line dry"
+                ]
+            },
+            { 
+                id: 7, 
+                title: "Denim Work Shirt", 
+                price: 54.99, 
+                category: "shirts", 
+                rating: 4.1, 
+                reviews: 87, 
+                badge: "new", 
+                image: "https://images.unsplash.com/photo-1605949405965-d49ada3f9189?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+, 
+                dateAdded: "2023-07-22", 
+                sales: 143,
+                description: "Rugged denim work shirt with reinforced stitching for durability. A versatile piece that works as both a shirt and light jacket.",
+                features: [
+                    "100% cotton denim",
+                    "Regular fit for ease of movement",
+                    "Point collar with button closure",
+                    "Two chest pockets with button flaps",
+                    "Machine wash cold"
+                ]
+            },
+            { 
+                id: 8, 
+                title: "Formal Dress Shirt", 
+                price: 59.99, 
+                category: "shirts", 
+                rating: 4.8, 
+                reviews: 201, 
+                badge: "bestseller", 
+                image: "https://images.unsplash.com/photo-1648839441609-317150d56096?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+                dateAdded: "2023-02-18", 
+                sales: 312,
+                description: "Premium formal dress shirt with non-iron technology. Stays crisp and fresh-looking all day long, perfect for business and formal occasions.",
+                features: [
+                    "100% premium cotton with non-iron finish",
+                    "Slim fit for polished look",
+                    "Spread collar for tie wear",
+                    "Double button cuffs",
+                    "Machine washable, no ironing needed"
+                ]
+            },
+            { 
+                id: 9, 
+                title: "Classic Wool Suit", 
+                price: 299.99, 
+                originalPrice: 399.99, 
+                category: "suits", 
+                rating: 4.9, 
+                reviews: 156, 
+                badge: "bestseller", 
+                image: "https://images.unsplash.com/photo-1635205383325-aa3e6fb5ba55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsYXNzaWMlMjB3b29sJTIwc3VpdHxlbnwwfHwwfHx8MA%3D%3D", 
+                dateAdded: "2023-01-10", 
+                sales: 198,
+                description: "Premium wool suit with modern slim fit. Handcrafted with attention to detail for a sharp, professional appearance that lasts.",
+                features: [
+                    "100% premium wool fabric",
+                    "Slim fit jacket and trousers",
+                    "Notch lapel, single-breasted",
+                    "Two-button closure",
+                    "Dry clean only"
+                ]
+            },
+            { 
+                id: 10, 
+                title: "Linen Blend Suit", 
+                price: 249.99, 
+                category: "suits", 
+                rating: 4.6, 
+                reviews: 112, 
+                badge: "trending", 
+                image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-05-30", 
+                sales: 167,
+                description: "Breathable linen blend suit perfect for summer weddings and warm weather events. Lightweight yet structured for a polished look.",
+                features: [
+                    "55% Linen, 45% Cotton blend",
+                    "Modern tailored fit",
+                    "Notch lapel, single-breasted",
+                    "Two-button closure",
+                    "Dry clean recommended"
+                ]
+            },
+            { 
+                id: 11, 
+                title: "Leather Belt", 
+                price: 34.99, 
+                originalPrice: 49.99, 
+                category: "accessories", 
+                rating: 4.7, 
+                reviews: 245, 
+                badge: "bestseller", 
+                image: "https://media.istockphoto.com/id/1029383076/photo/collection-of-leather-belts-on-a-wooden-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=2J0r9yx7-ELvxNYgKmE2y3tEcAnmdt5pOaCpb1A0b8s=", 
+                dateAdded: "2023-03-05", 
+                sales: 432,
+                description: "Genuine leather belt with polished buckle. Available in multiple colors to match any outfit or occasion.",
+                features: [
+                    "100% genuine leather",
+                    "1.5\" width",
+                    "Polished metal buckle",
+                    "Adjustable fit with multiple holes",
+                    "Wipe clean with damp cloth"
+                ]
+            },
+            { 
+                id: 12, 
+                title: "Silk Pocket Square", 
+                price: 19.99, 
+                category: "accessories", 
+                rating: 4.3, 
+                reviews: 98, 
+                badge: "new", 
+                image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", 
+                dateAdded: "2023-07-15", 
+                sales: 87,
+                description: "Luxury silk pocket square with hand-rolled edges. Adds a touch of elegance to any suit or blazer.",
+                features: [
+                    "100% pure silk",
+                    "Hand-rolled edges",
+                    "12\" x 12\" square",
+                    "Multiple pattern options",
+                    "Dry clean only"
+                ]
+            }
+        ];
+
+        // Categorize products
+        const trendingProducts = [products[0], products[1], products[5], products[9], products[2], products[6]];
+        const newArrivals = [products[2], products[6], products[7], products[11], products[5], products[10]];
+        const bestsellers = [products[3], products[4], products[8], products[10], products[0], products[11]];
+        const featuredProducts = [products[9], products[4], products[1], products[7], products[5], products[3]];
+
+        // DOM Elements
+        const trendingGrid = document.getElementById('trending-products');
+        const newArrivalsGrid = document.getElementById('new-arrivals-products');
+        const bestsellerGrid = document.getElementById('bestseller-products');
+        const featuredGrid = document.getElementById('featured-products');
+        const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+        const productModal = document.getElementById('productModal');
+        const modalClose = document.getElementById('modalClose');
+        const modalBody = document.getElementById('modalBody');
+        const cartNotification = document.getElementById('cartNotification');
+        const notificationText = document.getElementById('notificationText');
+        const scrollTopBtn = document.getElementById('scrollTop');
+        const salePopup = document.getElementById('salePopup');
+        const saleOverlay = document.getElementById('saleOverlay');
+        const salePopupClose = document.getElementById('salePopupClose');
+        const salePopupBtn = document.getElementById('salePopupBtn');
+        const sortBySelect = document.getElementById('sort-by');
+        const filterCategory = document.getElementById('filter-category');
+        const filterPrice = document.getElementById('filter-price');
+
+        // Track expanded state for each section
+        const sectionStates = {
+            'trending': false,
+            'new-arrivals': false,
+            'bestsellers': false,
+            'featured': false
+        };
+
+        // Initialize the page
+        function init() {
+            renderProducts();
+            setupEventListeners();
+            showSalePopup();
+        }
+
+        // Render products to the grid
+        function renderProducts() {
+            renderProductSection(trendingGrid, trendingProducts, 'trending');
+            renderProductSection(newArrivalsGrid, newArrivals, 'new-arrivals');
+            renderProductSection(bestsellerGrid, bestsellers, 'bestsellers');
+            renderProductSection(featuredGrid, featuredProducts, 'featured');
+        }
+
+        // Render a single product section
+        function renderProductSection(gridElement, products, sectionId) {
+            gridElement.innerHTML = '';
+            const limit = sectionStates[sectionId] ? products.length : 4;
+            
+            products.slice(0, limit).forEach(product => {
+                const productCard = createProductCard(product);
+                gridElement.appendChild(productCard);
+            });
+        }
+
+        // Create product card HTML
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            card.dataset.id = product.id;
+            
+            let badgeHTML = '';
+            if (product.badge) {
+                const badgeClass = `badge-${product.badge}`;
+                const badgeText = product.badge === 'new' ? 'New' : 
+                                 product.badge === 'sale' ? 'Sale' : 
+                                 product.badge === 'bestseller' ? 'Bestseller' : 'Trending';
+                badgeHTML = `<div class="product-badge ${badgeClass}">${badgeText}</div>`;
+            }
+            
+            let originalPriceHTML = '';
+            if (product.originalPrice) {
+                const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+                originalPriceHTML = `
+                    <span class="original-price">$${product.originalPrice.toFixed(2)}</span>
+                    <span class="discount">${discount}% OFF</span>
+                `;
+            }
+            
+            card.innerHTML = `
+                ${badgeHTML}
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.title}">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">${product.title}</h3>
+                    <div class="product-price">
+                        <span class="current-price">$${product.price.toFixed(2)}</span>
+                        ${originalPriceHTML}
+                    </div>
+                    <div class="product-rating">
+                        <div class="stars">
+                            ${renderStars(product.rating)}
+                        </div>
+                        <span class="rating-count">(${product.reviews})</span>
+                    </div>
+                    <button class="add-to-cart" data-id="${product.id}">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Render star rating
+        function renderStars(rating) {
+            let stars = '';
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            if (hasHalfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // See More/Less buttons
+            seeMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const section = this.dataset.section;
+                    sectionStates[section] = !sectionStates[section];
+                    this.textContent = sectionStates[section] ? 'Show Less' : 'See All';
+                    
+                    // Re-render the appropriate section
+                    if (section === 'trending') {
+                        renderProductSection(trendingGrid, trendingProducts, section);
+                    } else if (section === 'new-arrivals') {
+                        renderProductSection(newArrivalsGrid, newArrivals, section);
+                    } else if (section === 'bestsellers') {
+                        renderProductSection(bestsellerGrid, bestsellers, section);
+                    } else if (section === 'featured') {
+                        renderProductSection(featuredGrid, featuredProducts, section);
+                    }
+                });
+            });
+            
+            // Product card click (for modal)
+            document.addEventListener('click', function(e) {
+                const card = e.target.closest('.product-card');
+                if (card) {
+                    const productId = parseInt(card.dataset.id);
+                    const product = products.find(p => p.id === productId);
+                    if (product) {
+                        showProductModal(product);
+                    }
+                }
+                
+                // Add to cart button
+                const addToCartBtn = e.target.closest('.add-to-cart');
+                if (addToCartBtn) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const productId = parseInt(addToCartBtn.dataset.id);
+                    addToCart(productId);
+                }
+            });
+            
+            // Modal close
+            modalClose.addEventListener('click', hideProductModal);
+            productModal.addEventListener('click', function(e) {
+                if (e.target === productModal) {
+                    hideProductModal();
+                }
+            });
+            
+            // Sale popup
+            salePopupClose.addEventListener('click', hideSalePopup);
+            saleOverlay.addEventListener('click', hideSalePopup);
+            salePopupBtn.addEventListener('click', function() {
+                hideSalePopup();
+                window.location.href = '#trending';
+            });
+            
+            // Scroll to top
+            scrollTopBtn.addEventListener('click', scrollToTop);
+            window.addEventListener('scroll', toggleScrollTopButton);
+            
+            // Filter/sort controls
+            sortBySelect.addEventListener('change', applyFilters);
+            filterCategory.addEventListener('change', applyFilters);
+            filterPrice.addEventListener('change', applyFilters);
+        }
+
+        // Show product modal
+        function showProductModal(product) {
+            let originalPriceHTML = '';
+            if (product.originalPrice) {
+                const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+                originalPriceHTML = `
+                    <span class="modal-original-price">$${product.originalPrice.toFixed(2)}</span>
+                    <span class="modal-discount">${discount}% OFF</span>
+                `;
+            }
+            
+            let featuresHTML = '';
+            if (product.features && product.features.length > 0) {
+                featuresHTML = `
+                    <div class="modal-features">
+                        <h4>Features</h4>
+                        <ul>
+                            ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            modalBody.innerHTML = `
+                <div class="modal-images">
+                    <img src="${product.image}" alt="${product.title}" class="main-image">
+                </div>
+                <div class="modal-details">
+                    <h3 class="modal-title">${product.title}</h3>
+                    <div class="modal-price">
+                        ${originalPriceHTML}
+                        <span class="current-price">$${product.price.toFixed(2)}</span>
+                    </div>
+                    <div class="modal-rating">
+                        <div class="modal-stars">
+                            ${renderStars(product.rating)}
+                        </div>
+                        <span class="modal-reviews">${product.reviews} reviews</span>
+                    </div>
+                    <div class="modal-description">
+                        <p>${product.description}</p>
+                    </div>
+                    ${featuresHTML}
+                    <div class="modal-actions">
+                        <button class="modal-btn modal-btn-primary" data-id="${product.id}">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="modal-btn modal-btn-secondary">
+                            <i class="fas fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            // Add event listener to modal add to cart button
+            const modalAddToCart = modalBody.querySelector('.modal-btn-primary');
+            if (modalAddToCart) {
+                modalAddToCart.addEventListener('click', function() {
+                    addToCart(product.id);
+                });
+            }
+            
+            productModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Hide product modal
+        function hideProductModal() {
+            productModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Add to cart function
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            notificationText.textContent = `${product.title} added to cart!`;
+            showNotification();
+            
+            // In a real app, you would add to cart storage/state here
+            console.log(`Added product ${productId} to cart`);
+        }
+
+        // Show notification
+        function showNotification() {
+            cartNotification.classList.add('show');
+            setTimeout(() => {
+                cartNotification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Show sale popup
+        function showSalePopup() {
+            setTimeout(() => {
+                salePopup.classList.add('active');
+                saleOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }, 3000);
+        }
+
+        // Hide sale popup
+        function hideSalePopup() {
+            salePopup.classList.remove('active');
+            saleOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Toggle scroll to top button
+        function toggleScrollTopButton() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('active');
+            } else {
+                scrollTopBtn.classList.remove('active');
+            }
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Apply filters and sorting
+        function applyFilters() {
+            const sortBy = sortBySelect.value;
+            const category = filterCategory.value;
+            const priceRange = filterPrice.value;
+            
+            // Filter and sort all product arrays
+            filterAndSortProducts(trendingProducts, 'trending', sortBy, category, priceRange);
+            filterAndSortProducts(newArrivals, 'new-arrivals', sortBy, category, priceRange);
+            filterAndSortProducts(bestsellers, 'bestsellers', sortBy, category, priceRange);
+            filterAndSortProducts(featuredProducts, 'featured', sortBy, category, priceRange);
+            
+            // Re-render all sections
+            renderProducts();
+        }
+
+        // Filter and sort a product array
+        function filterAndSortProducts(productArray, sectionId, sortBy, category, priceRange) {
+            // Filter by category
+            let filtered = [...productArray];
+            if (category !== 'all') {
+                filtered = filtered.filter(product => product.category === category);
+            }
+            
+            // Filter by price range
+            if (priceRange !== 'all') {
+                const [min, max] = priceRange.split('-').map(Number);
+                if (priceRange.endsWith('+')) {
+                    filtered = filtered.filter(product => product.price >= min);
+                } else {
+                    filtered = filtered.filter(product => product.price >= min && product.price <= max);
+                }
+            }
+            
+            // Sort products
+            switch (sortBy) {
+                case 'price-low':
+                    filtered.sort((a, b) => a.price - b.price);
+                    break;
+                case 'price-high':
+                    filtered.sort((a, b) => b.price - a.price);
+                    break;
+                case 'rating':
+                    filtered.sort((a, b) => b.rating - a.rating);
+                    break;
+                case 'newest':
+                    filtered.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+                    break;
+                default:
+                    // Default sorting (trending/bestsellers might have their own order)
+                    break;
+            }
+            
+            // Update the appropriate array
+            if (sectionId === 'trending') {
+                trendingProducts.length = 0;
+                trendingProducts.push(...filtered);
+            } else if (sectionId === 'new-arrivals') {
+                newArrivals.length = 0;
+                newArrivals.push(...filtered);
+            } else if (sectionId === 'bestsellers') {
+                bestsellers.length = 0;
+                bestsellers.push(...filtered);
+            } else if (sectionId === 'featured') {
+                featuredProducts.length = 0;
+                featuredProducts.push(...filtered);
+            }
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

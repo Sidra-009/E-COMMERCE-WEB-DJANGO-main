@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection | Premium Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --dark-color: #2d3436;
+            --light-color: #f5f6fa;
+            --success-color: #00b894;
+            --danger-color: #d63031;
+            --warning-color: #fdcb6e;
+            --info-color: #0984e3;
+            --text-dark: #2d3748;
+            --text-light: #f8fafc;
+            --text-muted: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Banner Section */
+        .banner-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('{% static "images/mens-fashion-banner.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .banner-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .banner-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .banner-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .banner-btn:hover {
+            background: var(--dark-color);
+            transform: translateY(-3px);
+        }
+
+        /* Filter Bar */
+        .filter-bar {
+            background: white;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .filter-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+        }
+
+        .filter-select {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-price {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            margin-right: 10px;
+        }
+
+        .discount {
+            color: var(--danger-color);
+            font-size: 0.8rem;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="banner-content">
+            <h1 class="banner-title">Men's Collection</h1>
+            <p class="banner-subtitle">Discover premium fashion for the modern gentleman. Handcrafted with excellence, designed for comfort.</p>
+            <a href="#products" class="banner-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <span class="filter-label">Sort By:</span>
+                    <select class="filter-select" id="sort-by">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Filter By:</span>
+                    <select class="filter-select" id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="jeans">Jeans</option>
+                        <option value="shirts">Shirts</option>
+                        <option value="suits">Suits</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <section id="products">
+            <div class="section-header">
+                <h2 class="section-title">Our Collection</h2>
+                <p class="section-subtitle">Browse our premium selection of men's fashion</p>
+            </div>
+            
+            <div class="product-grid">
+                {% for product in products %}
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">{{ product.name }}</h3>
+                        <div class="product-price">
+                            {% if product.original_price %}
+                                <span class="original-price">${{ product.original_price }}</span>
+                            {% endif %}
+                            <span>${{ product.price }}</span>
+                            {% if product.original_price %}
+                                <span class="discount">
+                                    {% widthratio product.original_price product.price 100 as discount %}
+                                    {{ discount|add:"-100" }}% OFF
+                                </span>
+                            {% endif %}
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No products available at the moment.</p>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Simple filtering functionality
+        document.getElementById('filter-category').addEventListener('change', function() {
+            const category = this.value;
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = '';
+                } else {
+                    const productCategory = card.querySelector('.product-title').textContent.toLowerCase();
+                    if (productCategory.includes(category)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // Simple sorting functionality
+        document.getElementById('sort-by').addEventListener('change', function() {
+            const sortBy = this.value;
+            const productGrid = document.querySelector('.product-grid');
+            const productCards = Array.from(document.querySelectorAll('.product-card'));
+            
+            productCards.sort((a, b) => {
+                const priceA = parseFloat(a.querySelector('.product-price span:last-child').textContent.replace('$', ''));
+                const priceB = parseFloat(b.querySelector('.product-price span:last-child').textContent.replace('$', ''));
+                
+                if (sortBy === 'price-low') return priceA - priceB;
+                if (sortBy === 'price-high') return priceB - priceA;
+                return 0;
+            });
+            
+            // Re-append sorted products
+            productCards.forEach(card => productGrid.appendChild(card));
+        });
+    </script>
+</body>
+</html>

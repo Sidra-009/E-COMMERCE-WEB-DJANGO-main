@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Cartify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary-gradient: linear-gradient(135deg, #4f46e5, #7c3aed);
+        --dark-color: #1f2937;
+        --light-color: #f9fafb;
+        --text-dark: #1f2937;
+        --text-muted: #6b7280;
+        --border-radius-sm: 0.375rem;
+        --border-radius-md: 0.75rem;
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+        --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+        --transition-base: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background-color: #f3f4f6;
+        color: var(--text-dark);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .register-card {
+        background: white;
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--shadow-lg);
+        width: 100%;
+        max-width: 450px;
+        padding: 2.5rem;
+      }
+
+      .register-logo {
+        font-size: 2rem;
+        font-weight: bold;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1.5rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .form-header {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .form-header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+        color: var(--dark-color);
+      }
+
+      .form-header p {
+        color: var(--text-muted);
+      }
+
+      .form-group {
+        margin-bottom: 1.25rem;
+        position: relative;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--dark-color);
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: var(--border-radius-sm);
+        font-size: 1rem;
+        transition: var(--transition-base);
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: #4f46e5;
+        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+      }
+
+      .password-toggle {
+        position: absolute;
+        right: 1rem;
+        top: 2.6rem;
+        cursor: pointer;
+        color: var(--text-muted);
+      }
+
+      .name-fields {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .name-fields .form-group {
+        flex: 1;
+      }
+
+      .terms {
+        display: flex;
+        align-items: flex-start;
+        margin: 1.5rem 0;
+      }
+
+      .terms input {
+        margin-right: 0.75rem;
+        margin-top: 0.25rem;
+      }
+
+      .terms label {
+        font-size: 0.9375rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .terms a {
+        color: #4f46e5;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .terms a:hover {
+        text-decoration: underline;
+      }
+
+      .btn-register {
+        width: 100%;
+        padding: 1rem;
+        background: var(--primary-gradient);
+        color: white;
+        border: none;
+        border-radius: var(--border-radius-sm);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition-base);
+        margin-bottom: 1.5rem;
+      }
+
+      .btn-register:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .btn-register:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      .login-link {
+        text-align: center;
+        color: var(--text-muted);
+      }
+
+      .login-link a {
+        color: #4f46e5;
+        font-weight: 500;
+        text-decoration: none;
+        transition: var(--transition-base);
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+
+      .error-message {
+        color: #ef4444;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: none;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 480px) {
+        .register-card {
+          padding: 1.5rem;
+        }
+
+        .name-fields {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .form-header h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="register-card">
+      <a href="/" class="register-logo">Cartify</a>
+
+      <div class="form-header">
+        <h2>Create Your Account</h2>
+        <p>Join Cartify for a personalized shopping experience</p>
+      </div>
+
+      <form method="POST" id="registerForm" action="{% url 'myapp:register' %}">
+        {% csrf_token %}
+        <div class="name-fields">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="first_name"
+              class="form-control"
+              placeholder="Enter first name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="last_name"
+              class="form-control"
+              placeholder="Enter last name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create a password"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirm_password"
+            class="form-control"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" id="agreeTerms" required />
+          <label for="agreeTerms"
+            >I agree to Cartify's <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a></label
+          >
+        </div>
+
+        <button type="submit" class="btn-register" id="registerButton">
+          Create Account
+        </button>
+
+        <div class="login-link">
+          Already have an account?
+          <a href="{% url 'myapp:login' %}" id="loginLink">Sign in</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // DOM Elements
+      const registerForm = document.getElementById('registerForm');
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirmPassword');
+      const togglePassword = document.getElementById('togglePassword');
+      const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+      const registerButton = document.getElementById('registerButton');
+
+      // Toggle password visibility
+      togglePassword.addEventListener('click', function() {
+          const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+          password.setAttribute('type', type);
+          this.classList.toggle('fa-eye-slash');
+      });
+
+      toggleConfirmPassword.addEventListener('click', function() {
+          const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+          confirmPassword.setAttribute('type', type);
+          this.classList.toggle('fa-eye-slash');
+      });
+
+      // Form validation
+      {% comment %} registerForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          registerButton.disabled = true;
+          registerButton.textContent = 'Creating Account...';
+
+          // Reset error messages
+          document.querySelectorAll('.error-message').forEach(el => {
+              el.style.display = 'none';
+          });
+
+          // Validate form
+          let isValid = true;
+
+          // Name validation
+          const firstName = document.getElementById('firstName').value.trim();
+          const lastName = document.getElementById('lastName').value.trim();
+          if (!firstName) {
+              showError('firstNameError', 'First name is required');
+              isValid = false;
+          }
+          if (!lastName) {
+              showError('lastNameError', 'Last name is required');
+              isValid = false;
+          }
+
+          // Email validation
+          const email = document.getElementById('email').value.trim();
+          if (!email) {
+              showError('emailError', 'Email is required');
+              isValid = false;
+          } else if (!isValidEmail(email)) {
+              showError('emailError', 'Please enter a valid email');
+              isValid = false;
+          }
+
+          // Password validation
+          const passwordValue = password.value;
+          if (!passwordValue) {
+              showError('passwordError', 'Password is required');
+              isValid = false;
+          } else if (passwordValue.length < 8) {
+              showError('passwordError', 'Password must be at least 8 characters');
+              isValid = false;
+          }
+
+          // Confirm password validation
+          const confirmPasswordValue = confirmPassword.value;
+          if (passwordValue !== confirmPasswordValue) {
+              showError('confirmPasswordError', 'Passwords do not match');
+              isValid = false;
+          }
+
+          // Terms checkbox validation
+          if (!document.getElementById('agreeTerms').checked) {
+              isValid = false;
+              alert('You must agree to the terms and conditions');
+          }
+
+          if (isValid) {
+              // Simulate API call (replace with actual registration logic)
+              setTimeout(() => {
+                  console.log('Registration data:', {
+                      firstName,
+                      lastName,
+                      email,
+                      password: passwordValue
+                  });
+
+                  // Show success message
+                  alert('Account created successfully! Redirecting to login...');
+
+                  // Reset form
+                  registerForm.reset();
+                  registerButton.disabled = false;
+                  registerButton.textContent = 'Create Account';
+
+                  // In a real app, you would redirect here
+                  // window.location.href = 'login.html';
+              }, 1500);
+          } else {
+              registerButton.disabled = false;
+              registerButton.textContent = 'Create Account';
+          }
+      }); {% endcomment %}
+
+      // Helper functions
+      function showError(elementId, message) {
+          const element = document.getElementById(elementId);
+          element.textContent = message;
+          element.style.display = 'block';
+      }
+
+      function isValidEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+      }
+
+      // Login link
+      document.getElementById('loginLink').addEventListener('click', function(e) {
+          e.preventDefault();
+          // In a real app, this would redirect to login page
+          alert('Would redirect to login page');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartify - Premium Fashion & Electronics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styles */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-banner {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .nav-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            margin: 0 2rem;
+        }
+
+        .nav-categories {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-category {
+            position: relative;
+            padding: 0.5rem 0;
+            text-decoration: none;
+            color: #000000; /* Changed to black */
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-category a {
+            color: #000000; /* Changed to black */
+            text-decoration: none; /* Removed underline */
+        }
+
+        .nav-category:hover {
+            color: #4f46e5;
+        }
+
+        .nav-category:hover a {
+            color: #4f46e5;
+        }
+
+        .dropdown-indicator {
+            margin-left: 0.25rem;
+            font-size: 0.7rem;
+            transition: transform 0.2s;
+        }
+
+        .nav-category:hover .dropdown-indicator {
+            color: #4f46e5;
+        }
+
+        .nav-category.active .dropdown-indicator {
+            transform: rotate(180deg);
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            min-width: 240px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: #374151;
+            border-radius: 0.375rem;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .dropdown a:hover {
+            background: #eef2ff;
+            color: #4f46e5;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 600px;
+            margin-left: 2rem;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            transition: border-color 0.2s;
+            padding-right: 3rem;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #4f46e5;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: #6b7280;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .search-btn:hover {
+            color: #4f46e5;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        .nav-btn:hover {
+            background: #eef2ff;
+            color: #4f46e5;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -0.5rem;
+            right: -0.5rem;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        /* Account Dropdown */
+        .account-dropdown {
+            position: relative;
+        }
+
+        .account-menu {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s;
+            z-index: 50;
+        }
+
+        .account-menu a {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: #374151;
+            border-radius: 0.375rem;
+            transition: all 0.2s;
+        }
+
+        .account-menu a:hover {
+            background: #eef2ff;
+            color: #4f46e5;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #374151;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 85vh;
+            min-height: 700px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+            z-index: -1;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 600px;
+            z-index: 10;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #e5e7eb;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #374151;
+        }
+
+        /* Categories Section */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .category-card {
+            position: relative;
+            height: 300px;
+            border-radius: 1rem;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .category-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            transition: opacity 0.3s;
+        }
+
+        /* Different colors for each category card */
+        .category-card:nth-child(1) .category-overlay {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.8), rgba(124, 58, 237, 0.8));
+        }
+        .category-card:nth-child(2) .category-overlay {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.8), rgba(236, 72, 153, 0.8));
+        }
+        .category-card:nth-child(3) .category-overlay {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.8), rgba(5, 150, 105, 0.8));
+        }
+        .category-card:nth-child(4) .category-overlay {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.8), rgba(217, 119, 6, 0.8));
+        }
+
+        .category-card:hover .category-overlay {
+            opacity: 0.9;
+        }
+
+        .category-content h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-content p {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.9;
+        }
+
+        .category-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            display: block;
+            text-decoration: none;
+        }
+
+        .footer-description {
+            color: #9ca3af;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 3rem;
+            height: 3rem;
+            background: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #4f46e5;
+            color: white;
+        }
+
+        .footer-section h4 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .payment-icons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .payment-icons img {
+            height: 2rem;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+
+        .payment-icons img:hover {
+            opacity: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .nav-categories {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 1rem;
+                box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+                flex-direction: column;
+            }
+            
+            .nav-categories.active {
+                display: flex;
+            }
+            
+            .nav-category {
+                padding: 0.75rem 0;
+            }
+            
+            .dropdown {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                padding: 0.5rem 0 0 1rem;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .nav-category.active .dropdown {
+                max-height: 500px;
+            }
+            
+            .search-bar {
+                margin: 0 1rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+   {% include 'navbar.html' %}
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/6994838/6994838-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Discover Your <span class="hero-gradient-text">Perfect Style</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Shop the latest in fashion and cutting-edge electronics. Premium quality, unbeatable prices, and worldwide shipping.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn btn-primary">Shop Now</a>
+                    <a href="collections" class="btn btn-secondary"><i class="fas fa-play"></i> Watch Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Explore our curated collections of premium fashion and cutting-edge technology</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card" onclick="window.location.href='{% url 'shop:fashion' %}'">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Fashion & Style">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Fashion & Style</h3>
+                            <p>Trendy clothing & accessories</p>
+                            <span class="category-badge">3,500+ items</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='{% url 'myapp:electronics' %}'">
+                    <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=600&h=400&fit=crop" alt="Electronics Hub">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Electronics Hub</h3>
+                            <p>Latest tech & gadgets</p>
+                            <span class="category-badge">3,200+ items</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='{% url 'myapp:home_living' %}'">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop" alt="Home & Living">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Home & Living</h3>
+                            <p>Stylish home essentials</p>
+                            <span class="category-badge">2,800+ items</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card" onclick="window.location.href='{% url 'myapp:beauty' %}'">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop" alt="Beauty & Health">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Beauty & Health</h3>
+                            <p>Premium beauty products</p>
+                            <span class="category-badge">1,900+ items</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">Cartify</a>
+                    <p class="footer-description">
+                        Premium fashion and electronics marketplace offering the latest trends and cutting-edge technology with worldwide shipping and exceptional customer service.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'shop:fashion' %}">Fashion</a></li>
+                        <li><a href="{% url 'myapp:electronics' %}">Electronics</a></li>
+                        <li><a href="{% url 'myapp:home_living' %}">Home & Living</a></li>
+                        <li><a href="{% url 'myapp:beauty' %}">Beauty & Health</a></li>
+                        <li><a href="new-arrivals">New Arrivals</a></li>
+                        <li><a href="sale">Deals & Promotions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="faq">FAQs</a></li>
+                        <li><a href="shipping">Shipping Policy</a></li>
+                        <li><a href="returns">Returns & Exchanges</a></li>
+                        <li><a href="size-guide">Size Guide</a></li>
+                        <li><a href="product-care">Product Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="careers">Careers</a></li>
+                        <li><a href="press">Press</a></li>
+                        <li><a href="affiliates">Affiliate Program</a></li>
+                        <li><a href="sustainability">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cartify. All rights reserved.</p>
+                <div class="payment-icons">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="American Express">
+                    <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="PayPal">
+                    <img src="https://cdn-icons-png.flaticon.com/512/825/825462.png" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navCategories = document.querySelector('.nav-categories');
+        
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navCategories.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-categories') && !e.target.closest('.mobile-menu-btn')) {
+                navCategories.classList.remove('active');
+            }
+        });
+        
+        // Dropdown functionality for desktop
+        if (window.innerWidth > 1024) {
+            document.querySelectorAll('.nav-category').forEach(category => {
+                category.addEventListener('mouseenter', () => {
+                    const dropdown = category.querySelector('.dropdown');
+                    if (dropdown) {
+                        dropdown.style.opacity = '1';
+                        dropdown.style.visibility = 'visible';
+                        dropdown.style.transform = 'translateY(0)';
+                    }
+                });
+                
+                category.addEventListener('mouseleave', () => {
+                    const dropdown = category.querySelector('.dropdown');
+                    if (dropdown) {
+                        dropdown.style.opacity = '0';
+                        dropdown.style.visibility = 'hidden';
+                        dropdown.style.transform = 'translateY(-10px)';
+                    }
+                });
+            });
+        } else {
+            // For mobile, toggle dropdown on click
+            document.querySelectorAll('.nav-category').forEach(category => {
+                const link = category.querySelector('a');
+                
+                link.addEventListener('click', (e) => {
+                    if (category.querySelector('.dropdown')) {
+                        e.preventDefault();
+                        category.classList.toggle('active');
+                        
+                        // Close other open dropdowns
+                        document.querySelectorAll('.nav-category').forEach(otherCategory => {
+                            if (otherCategory !== category && otherCategory.classList.contains('active')) {
+                                otherCategory.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Account dropdown functionality
+        const accountDropdown = document.querySelector('.account-dropdown');
+        const accountMenu = document.querySelector('.account-menu');
+        const loginBtn = document.getElementById('login-btn');
+        
+        if (window.innerWidth > 768) {
+            accountDropdown.addEventListener('mouseenter', () => {
+                accountMenu.style.opacity = '1';
+                accountMenu.style.visibility = 'visible';
+                accountMenu.style.transform = 'translateY(0)';
+            });
+            
+            accountDropdown.addEventListener('mouseleave', () => {
+                accountMenu.style.opacity = '0';
+                accountMenu.style.visibility = 'hidden';
+                accountMenu.style.transform = 'translateY(-10px)';
+            });
+        } else {
+            loginBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                accountMenu.style.display = accountMenu.style.display === 'block' ? 'none' : 'block';
+                accountMenu.style.opacity = '1';
+                accountMenu.style.visibility = 'visible';
+                accountMenu.style.transform = 'translateY(0)';
+            });
+        }
+        
+        // Search functionality
+        document.querySelector('.search-btn').addEventListener('click', () => {
+            const query = document.querySelector('.search-input').value.trim();
+            if (query) {
+                window.location.href = `search?q=${encodeURIComponent(query)}`;
+            }
+        });
+        
+        // Cart button functionality
+        document.getElementById('cart-btn').addEventListener('click', () => {
+            window.location.href = 'checkout';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking on a link
+        document.querySelectorAll('.dropdown a, .account-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 1024) {
+                    document.querySelectorAll('.nav-category').forEach(category => {
+                        category.classList.remove('active');
+                    });
+                    navCategories.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

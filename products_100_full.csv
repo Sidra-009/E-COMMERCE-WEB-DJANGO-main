@@ -1,0 +1,101 @@
+name,main_category,subcategory,price,stock,description,image_url
+Fashion Product 1,Fashion,Shoes,1557.23,85,Description for Fashion Product 1,https://example.com/images/fashion_1.jpg
+Fashion Product 2,Fashion,Men's Clothing,1388.16,87,Description for Fashion Product 2,https://example.com/images/fashion_2.jpg
+Fashion Product 3,Fashion,Men's Clothing,2350.08,49,Description for Fashion Product 3,https://example.com/images/fashion_3.jpg
+Fashion Product 4,Fashion,Women's Clothing,1970.16,53,Description for Fashion Product 4,https://example.com/images/fashion_4.jpg
+Fashion Product 5,Fashion,Men's Clothing,270.86,58,Description for Fashion Product 5,https://example.com/images/fashion_5.jpg
+Fashion Product 6,Fashion,Shoes,2011.02,17,Description for Fashion Product 6,https://example.com/images/fashion_6.jpg
+Fashion Product 7,Fashion,Shoes,392.74,68,Description for Fashion Product 7,https://example.com/images/fashion_7.jpg
+Fashion Product 8,Fashion,Shoes,1515.15,85,Description for Fashion Product 8,https://example.com/images/fashion_8.jpg
+Fashion Product 9,Fashion,Men's Clothing,2112.95,21,Description for Fashion Product 9,https://example.com/images/fashion_9.jpg
+Fashion Product 10,Fashion,Men's Clothing,2174.34,99,Description for Fashion Product 10,https://example.com/images/fashion_10.jpg
+Fashion Product 11,Fashion,Shoes,2254.77,71,Description for Fashion Product 11,https://example.com/images/fashion_11.jpg
+Fashion Product 12,Fashion,Women's Clothing,1366.65,44,Description for Fashion Product 12,https://example.com/images/fashion_12.jpg
+Fashion Product 13,Fashion,Women's Clothing,2125.01,22,Description for Fashion Product 13,https://example.com/images/fashion_13.jpg
+Fashion Product 14,Fashion,Men's Clothing,322.34,78,Description for Fashion Product 14,https://example.com/images/fashion_14.jpg
+Fashion Product 15,Fashion,Men's Clothing,24.12,98,Description for Fashion Product 15,https://example.com/images/fashion_15.jpg
+Fashion Product 16,Fashion,Shoes,2345.73,51,Description for Fashion Product 16,https://example.com/images/fashion_16.jpg
+Fashion Product 17,Fashion,Women's Clothing,525.27,22,Description for Fashion Product 17,https://example.com/images/fashion_17.jpg
+Fashion Product 18,Fashion,Shoes,511.63,76,Description for Fashion Product 18,https://example.com/images/fashion_18.jpg
+Fashion Product 19,Fashion,Men's Clothing,1700.73,17,Description for Fashion Product 19,https://example.com/images/fashion_19.jpg
+Fashion Product 20,Fashion,Men's Clothing,2052.44,97,Description for Fashion Product 20,https://example.com/images/fashion_20.jpg
+Electronics Product 1,Electronics,Laptops,2054.7,28,Description for Electronics Product 1,https://example.com/images/electronics_1.jpg
+Electronics Product 2,Electronics,Camera,877.29,74,Description for Electronics Product 2,https://example.com/images/electronics_2.jpg
+Electronics Product 3,Electronics,Camera,760.36,29,Description for Electronics Product 3,https://example.com/images/electronics_3.jpg
+Electronics Product 4,Electronics,Camera,2029.87,18,Description for Electronics Product 4,https://example.com/images/electronics_4.jpg
+Electronics Product 5,Electronics,Smart Phones,592.88,31,Description for Electronics Product 5,https://example.com/images/electronics_5.jpg
+Electronics Product 6,Electronics,Laptops,182.6,35,Description for Electronics Product 6,https://example.com/images/electronics_6.jpg
+Electronics Product 7,Electronics,Smart Phones,1962.64,81,Description for Electronics Product 7,https://example.com/images/electronics_7.jpg
+Electronics Product 8,Electronics,Smart Phones,1797.26,43,Description for Electronics Product 8,https://example.com/images/electronics_8.jpg
+Electronics Product 9,Electronics,Smart Phones,1343.12,41,Description for Electronics Product 9,https://example.com/images/electronics_9.jpg
+Electronics Product 10,Electronics,Smart Phones,1492.93,27,Description for Electronics Product 10,https://example.com/images/electronics_10.jpg
+Electronics Product 11,Electronics,Laptops,1288.7,7,Description for Electronics Product 11,https://example.com/images/electronics_11.jpg
+Electronics Product 12,Electronics,Camera,1381.61,34,Description for Electronics Product 12,https://example.com/images/electronics_12.jpg
+Electronics Product 13,Electronics,Camera,1291.6,38,Description for Electronics Product 13,https://example.com/images/electronics_13.jpg
+Electronics Product 14,Electronics,Smart Phones,535.93,34,Description for Electronics Product 14,https://example.com/images/electronics_14.jpg
+Electronics Product 15,Electronics,Laptops,1854.74,71,Description for Electronics Product 15,https://example.com/images/electronics_15.jpg
+Electronics Product 16,Electronics,Camera,1470.02,37,Description for Electronics Product 16,https://example.com/images/electronics_16.jpg
+Electronics Product 17,Electronics,Laptops,445.71,75,Description for Electronics Product 17,https://example.com/images/electronics_17.jpg
+Electronics Product 18,Electronics,Smart Phones,245.44,93,Description for Electronics Product 18,https://example.com/images/electronics_18.jpg
+Electronics Product 19,Electronics,Laptops,764.96,70,Description for Electronics Product 19,https://example.com/images/electronics_19.jpg
+Electronics Product 20,Electronics,Camera,703.2,70,Description for Electronics Product 20,https://example.com/images/electronics_20.jpg
+Home & Living Product 1,Home & Living,Bedding,2090.53,34,Description for Home & Living Product 1,https://example.com/images/home__living_1.jpg
+Home & Living Product 2,Home & Living,Furniture,145.81,18,Description for Home & Living Product 2,https://example.com/images/home__living_2.jpg
+Home & Living Product 3,Home & Living,Furniture,323.56,10,Description for Home & Living Product 3,https://example.com/images/home__living_3.jpg
+Home & Living Product 4,Home & Living,Furniture,836.54,5,Description for Home & Living Product 4,https://example.com/images/home__living_4.jpg
+Home & Living Product 5,Home & Living,Kitchen,1640.05,26,Description for Home & Living Product 5,https://example.com/images/home__living_5.jpg
+Home & Living Product 6,Home & Living,Kitchen,261.98,84,Description for Home & Living Product 6,https://example.com/images/home__living_6.jpg
+Home & Living Product 7,Home & Living,Furniture,2108.35,79,Description for Home & Living Product 7,https://example.com/images/home__living_7.jpg
+Home & Living Product 8,Home & Living,Kitchen,107.25,80,Description for Home & Living Product 8,https://example.com/images/home__living_8.jpg
+Home & Living Product 9,Home & Living,Bedding,761.08,94,Description for Home & Living Product 9,https://example.com/images/home__living_9.jpg
+Home & Living Product 10,Home & Living,Bedding,1692.45,50,Description for Home & Living Product 10,https://example.com/images/home__living_10.jpg
+Home & Living Product 11,Home & Living,Kitchen,2392.66,15,Description for Home & Living Product 11,https://example.com/images/home__living_11.jpg
+Home & Living Product 12,Home & Living,Bedding,818.13,99,Description for Home & Living Product 12,https://example.com/images/home__living_12.jpg
+Home & Living Product 13,Home & Living,Bedding,948.21,99,Description for Home & Living Product 13,https://example.com/images/home__living_13.jpg
+Home & Living Product 14,Home & Living,Kitchen,360.83,95,Description for Home & Living Product 14,https://example.com/images/home__living_14.jpg
+Home & Living Product 15,Home & Living,Bedding,2364.43,87,Description for Home & Living Product 15,https://example.com/images/home__living_15.jpg
+Home & Living Product 16,Home & Living,Bedding,238.96,83,Description for Home & Living Product 16,https://example.com/images/home__living_16.jpg
+Home & Living Product 17,Home & Living,Furniture,1162.68,53,Description for Home & Living Product 17,https://example.com/images/home__living_17.jpg
+Home & Living Product 18,Home & Living,Furniture,521.28,70,Description for Home & Living Product 18,https://example.com/images/home__living_18.jpg
+Home & Living Product 19,Home & Living,Furniture,398.72,96,Description for Home & Living Product 19,https://example.com/images/home__living_19.jpg
+Home & Living Product 20,Home & Living,Furniture,700.22,40,Description for Home & Living Product 20,https://example.com/images/home__living_20.jpg
+Beauty & Health Product 1,Beauty & Health,Haircare,279.81,13,Description for Beauty & Health Product 1,https://example.com/images/beauty__health_1.jpg
+Beauty & Health Product 2,Beauty & Health,Makeup,1892.18,94,Description for Beauty & Health Product 2,https://example.com/images/beauty__health_2.jpg
+Beauty & Health Product 3,Beauty & Health,Makeup,1786.21,34,Description for Beauty & Health Product 3,https://example.com/images/beauty__health_3.jpg
+Beauty & Health Product 4,Beauty & Health,Haircare,1669.22,73,Description for Beauty & Health Product 4,https://example.com/images/beauty__health_4.jpg
+Beauty & Health Product 5,Beauty & Health,Haircare,2123.69,86,Description for Beauty & Health Product 5,https://example.com/images/beauty__health_5.jpg
+Beauty & Health Product 6,Beauty & Health,Skincare,70.79,5,Description for Beauty & Health Product 6,https://example.com/images/beauty__health_6.jpg
+Beauty & Health Product 7,Beauty & Health,Makeup,2351.66,47,Description for Beauty & Health Product 7,https://example.com/images/beauty__health_7.jpg
+Beauty & Health Product 8,Beauty & Health,Skincare,2461.7,37,Description for Beauty & Health Product 8,https://example.com/images/beauty__health_8.jpg
+Beauty & Health Product 9,Beauty & Health,Haircare,899.72,36,Description for Beauty & Health Product 9,https://example.com/images/beauty__health_9.jpg
+Beauty & Health Product 10,Beauty & Health,Makeup,1006.22,5,Description for Beauty & Health Product 10,https://example.com/images/beauty__health_10.jpg
+Beauty & Health Product 11,Beauty & Health,Haircare,180.15,83,Description for Beauty & Health Product 11,https://example.com/images/beauty__health_11.jpg
+Beauty & Health Product 12,Beauty & Health,Skincare,1434.14,89,Description for Beauty & Health Product 12,https://example.com/images/beauty__health_12.jpg
+Beauty & Health Product 13,Beauty & Health,Makeup,1297.89,70,Description for Beauty & Health Product 13,https://example.com/images/beauty__health_13.jpg
+Beauty & Health Product 14,Beauty & Health,Haircare,2278.04,58,Description for Beauty & Health Product 14,https://example.com/images/beauty__health_14.jpg
+Beauty & Health Product 15,Beauty & Health,Makeup,1258.42,84,Description for Beauty & Health Product 15,https://example.com/images/beauty__health_15.jpg
+Beauty & Health Product 16,Beauty & Health,Makeup,880.24,48,Description for Beauty & Health Product 16,https://example.com/images/beauty__health_16.jpg
+Beauty & Health Product 17,Beauty & Health,Haircare,754.58,61,Description for Beauty & Health Product 17,https://example.com/images/beauty__health_17.jpg
+Beauty & Health Product 18,Beauty & Health,Skincare,111.11,67,Description for Beauty & Health Product 18,https://example.com/images/beauty__health_18.jpg
+Beauty & Health Product 19,Beauty & Health,Skincare,1467.74,35,Description for Beauty & Health Product 19,https://example.com/images/beauty__health_19.jpg
+Beauty & Health Product 20,Beauty & Health,Makeup,2180.68,82,Description for Beauty & Health Product 20,https://example.com/images/beauty__health_20.jpg
+Books Product 1,Books,Fiction,1655.89,68,Description for Books Product 1,https://example.com/images/books_1.jpg
+Books Product 2,Books,Non-Fiction,951.08,72,Description for Books Product 2,https://example.com/images/books_2.jpg
+Books Product 3,Books,Fiction,828.15,74,Description for Books Product 3,https://example.com/images/books_3.jpg
+Books Product 4,Books,Non-Fiction,2407.67,89,Description for Books Product 4,https://example.com/images/books_4.jpg
+Books Product 5,Books,Children's Books,1440.96,13,Description for Books Product 5,https://example.com/images/books_5.jpg
+Books Product 6,Books,Non-Fiction,814.54,14,Description for Books Product 6,https://example.com/images/books_6.jpg
+Books Product 7,Books,Non-Fiction,1455.45,72,Description for Books Product 7,https://example.com/images/books_7.jpg
+Books Product 8,Books,Children's Books,1889.31,90,Description for Books Product 8,https://example.com/images/books_8.jpg
+Books Product 9,Books,Fiction,1444.25,23,Description for Books Product 9,https://example.com/images/books_9.jpg
+Books Product 10,Books,Children's Books,79.69,90,Description for Books Product 10,https://example.com/images/books_10.jpg
+Books Product 11,Books,Fiction,1106.39,95,Description for Books Product 11,https://example.com/images/books_11.jpg
+Books Product 12,Books,Fiction,2309.57,11,Description for Books Product 12,https://example.com/images/books_12.jpg
+Books Product 13,Books,Non-Fiction,831.93,59,Description for Books Product 13,https://example.com/images/books_13.jpg
+Books Product 14,Books,Fiction,1654.25,33,Description for Books Product 14,https://example.com/images/books_14.jpg
+Books Product 15,Books,Fiction,1493.96,78,Description for Books Product 15,https://example.com/images/books_15.jpg
+Books Product 16,Books,Fiction,1024.65,51,Description for Books Product 16,https://example.com/images/books_16.jpg
+Books Product 17,Books,Children's Books,1466.08,6,Description for Books Product 17,https://example.com/images/books_17.jpg
+Books Product 18,Books,Fiction,1471.22,61,Description for Books Product 18,https://example.com/images/books_18.jpg
+Books Product 19,Books,Children's Books,2291.8,39,Description for Books Product 19,https://example.com/images/books_19.jpg
+Books Product 20,Books,Fiction,2106.86,9,Description for Books Product 20,https://example.com/images/books_20.jpg

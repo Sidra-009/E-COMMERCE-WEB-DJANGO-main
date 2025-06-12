@@ -1,0 +1,361 @@
+name,slug,price,old_price,description,stock,image,created_at,updated_at,sub_category_id
+Shirt 1,shirt-1,2361,2780,High quality shirt for daily use.,39,images/shirt-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 2,shirt-2,1951,2522,High quality shirt for daily use.,88,images/shirt-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 3,shirt-3,4792,5562,High quality shirt for daily use.,36,images/shirt-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 4,shirt-4,2825,3051,High quality shirt for daily use.,58,images/shirt-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 5,shirt-5,4079,4531,High quality shirt for daily use.,14,images/shirt-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 6,shirt-6,1986,2485,High quality shirt for daily use.,16,images/shirt-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 7,shirt-7,1070,1655,High quality shirt for daily use.,85,images/shirt-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 8,shirt-8,4404,4936,High quality shirt for daily use.,15,images/shirt-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 9,shirt-9,3718,4454,High quality shirt for daily use.,27,images/shirt-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Shirt 10,shirt-10,4057,4521,High quality shirt for daily use.,77,images/shirt-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 1,jeans-1,3051,3752,High quality jeans for daily use.,95,images/jeans-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 2,jeans-2,1668,2076,High quality jeans for daily use.,90,images/jeans-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 3,jeans-3,3873,4392,High quality jeans for daily use.,72,images/jeans-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 4,jeans-4,2457,2969,High quality jeans for daily use.,58,images/jeans-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 5,jeans-5,2466,3121,High quality jeans for daily use.,70,images/jeans-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 6,jeans-6,2519,3072,High quality jeans for daily use.,57,images/jeans-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 7,jeans-7,4939,5695,High quality jeans for daily use.,82,images/jeans-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 8,jeans-8,1084,1841,High quality jeans for daily use.,46,images/jeans-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 9,jeans-9,3132,3545,High quality jeans for daily use.,41,images/jeans-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Jeans 10,jeans-10,3964,4340,High quality jeans for daily use.,45,images/jeans-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 1,suit-1,4522,5077,High quality suit for daily use.,58,images/suit-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 2,suit-2,1002,1600,High quality suit for daily use.,72,images/suit-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 3,suit-3,3634,4100,High quality suit for daily use.,43,images/suit-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 4,suit-4,2155,2623,High quality suit for daily use.,90,images/suit-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 5,suit-5,1598,2256,High quality suit for daily use.,50,images/suit-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 6,suit-6,4917,5711,High quality suit for daily use.,51,images/suit-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 7,suit-7,4093,4311,High quality suit for daily use.,52,images/suit-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 8,suit-8,4752,5239,High quality suit for daily use.,82,images/suit-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 9,suit-9,4407,4791,High quality suit for daily use.,14,images/suit-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Suit 10,suit-10,3985,4535,High quality suit for daily use.,21,images/suit-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,1
+Dress 1,dress-1,2898,3639,High quality dress for daily use.,12,images/dress-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 2,dress-2,2862,3145,High quality dress for daily use.,21,images/dress-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 3,dress-3,2028,2713,High quality dress for daily use.,29,images/dress-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 4,dress-4,2696,3348,High quality dress for daily use.,39,images/dress-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 5,dress-5,4874,5313,High quality dress for daily use.,71,images/dress-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 6,dress-6,1227,1831,High quality dress for daily use.,59,images/dress-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 7,dress-7,1459,2080,High quality dress for daily use.,74,images/dress-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 8,dress-8,1790,2392,High quality dress for daily use.,23,images/dress-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 9,dress-9,4863,5579,High quality dress for daily use.,96,images/dress-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Dress 10,dress-10,4422,4658,High quality dress for daily use.,82,images/dress-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 1,top-1,1038,1308,High quality top for daily use.,96,images/top-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 2,top-2,3458,4241,High quality top for daily use.,44,images/top-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 3,top-3,4061,4802,High quality top for daily use.,62,images/top-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 4,top-4,2793,3443,High quality top for daily use.,41,images/top-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 5,top-5,4886,5323,High quality top for daily use.,57,images/top-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 6,top-6,3774,4381,High quality top for daily use.,83,images/top-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 7,top-7,2756,3477,High quality top for daily use.,60,images/top-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 8,top-8,4956,5679,High quality top for daily use.,30,images/top-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 9,top-9,1519,2111,High quality top for daily use.,78,images/top-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Top 10,top-10,4843,5332,High quality top for daily use.,80,images/top-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 1,skirt-1,3264,3725,High quality skirt for daily use.,81,images/skirt-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 2,skirt-2,4804,5262,High quality skirt for daily use.,70,images/skirt-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 3,skirt-3,4685,4886,High quality skirt for daily use.,99,images/skirt-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 4,skirt-4,3781,4030,High quality skirt for daily use.,75,images/skirt-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 5,skirt-5,2656,3294,High quality skirt for daily use.,14,images/skirt-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 6,skirt-6,4869,5360,High quality skirt for daily use.,70,images/skirt-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 7,skirt-7,2457,3071,High quality skirt for daily use.,55,images/skirt-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 8,skirt-8,4480,5128,High quality skirt for daily use.,14,images/skirt-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 9,skirt-9,1216,1447,High quality skirt for daily use.,82,images/skirt-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Skirt 10,skirt-10,3996,4199,High quality skirt for daily use.,42,images/skirt-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,2
+Sneakers 1,sneakers-1,3534,3803,High quality sneakers for daily use.,63,images/sneakers-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 2,sneakers-2,1792,2494,High quality sneakers for daily use.,25,images/sneakers-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 3,sneakers-3,1491,2253,High quality sneakers for daily use.,41,images/sneakers-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 4,sneakers-4,4202,4851,High quality sneakers for daily use.,54,images/sneakers-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 5,sneakers-5,4770,5381,High quality sneakers for daily use.,70,images/sneakers-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 6,sneakers-6,1437,2046,High quality sneakers for daily use.,48,images/sneakers-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 7,sneakers-7,3293,3586,High quality sneakers for daily use.,25,images/sneakers-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 8,sneakers-8,4038,4428,High quality sneakers for daily use.,86,images/sneakers-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 9,sneakers-9,4056,4420,High quality sneakers for daily use.,73,images/sneakers-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sneakers 10,sneakers-10,4915,5313,High quality sneakers for daily use.,35,images/sneakers-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 1,sandals-1,1692,2243,High quality sandals for daily use.,99,images/sandals-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 2,sandals-2,2708,3022,High quality sandals for daily use.,23,images/sandals-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 3,sandals-3,2608,2981,High quality sandals for daily use.,15,images/sandals-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 4,sandals-4,2630,3415,High quality sandals for daily use.,88,images/sandals-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 5,sandals-5,1699,2069,High quality sandals for daily use.,65,images/sandals-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 6,sandals-6,2784,3540,High quality sandals for daily use.,96,images/sandals-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 7,sandals-7,3603,4090,High quality sandals for daily use.,94,images/sandals-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 8,sandals-8,3837,4446,High quality sandals for daily use.,11,images/sandals-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 9,sandals-9,1919,2137,High quality sandals for daily use.,85,images/sandals-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Sandals 10,sandals-10,1004,1262,High quality sandals for daily use.,15,images/sandals-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 1,boots-1,3843,4487,High quality boots for daily use.,76,images/boots-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 2,boots-2,2457,2657,High quality boots for daily use.,45,images/boots-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 3,boots-3,3578,4201,High quality boots for daily use.,19,images/boots-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 4,boots-4,4475,4904,High quality boots for daily use.,14,images/boots-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 5,boots-5,3041,3795,High quality boots for daily use.,57,images/boots-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 6,boots-6,1342,2130,High quality boots for daily use.,45,images/boots-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 7,boots-7,3418,3945,High quality boots for daily use.,83,images/boots-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 8,boots-8,2521,3078,High quality boots for daily use.,73,images/boots-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 9,boots-9,4053,4518,High quality boots for daily use.,95,images/boots-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Boots 10,boots-10,4107,4533,High quality boots for daily use.,45,images/boots-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,3
+Gaming Laptop 1,gaming-laptop-1,3357,3867,High quality gaming laptop for daily use.,65,images/gaming-laptop-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 2,gaming-laptop-2,1926,2339,High quality gaming laptop for daily use.,26,images/gaming-laptop-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 3,gaming-laptop-3,4022,4263,High quality gaming laptop for daily use.,86,images/gaming-laptop-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 4,gaming-laptop-4,4571,5023,High quality gaming laptop for daily use.,29,images/gaming-laptop-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 5,gaming-laptop-5,1646,1847,High quality gaming laptop for daily use.,68,images/gaming-laptop-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 6,gaming-laptop-6,2631,3384,High quality gaming laptop for daily use.,98,images/gaming-laptop-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 7,gaming-laptop-7,3313,3823,High quality gaming laptop for daily use.,54,images/gaming-laptop-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 8,gaming-laptop-8,3585,3850,High quality gaming laptop for daily use.,48,images/gaming-laptop-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 9,gaming-laptop-9,4026,4714,High quality gaming laptop for daily use.,94,images/gaming-laptop-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Gaming Laptop 10,gaming-laptop-10,4254,4769,High quality gaming laptop for daily use.,90,images/gaming-laptop-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 1,business-laptop-1,1614,2169,High quality business laptop for daily use.,51,images/business-laptop-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 2,business-laptop-2,2821,3218,High quality business laptop for daily use.,49,images/business-laptop-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 3,business-laptop-3,3139,3850,High quality business laptop for daily use.,24,images/business-laptop-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 4,business-laptop-4,2694,3089,High quality business laptop for daily use.,71,images/business-laptop-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 5,business-laptop-5,3721,4290,High quality business laptop for daily use.,62,images/business-laptop-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 6,business-laptop-6,1774,2452,High quality business laptop for daily use.,37,images/business-laptop-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 7,business-laptop-7,1359,1647,High quality business laptop for daily use.,39,images/business-laptop-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 8,business-laptop-8,3163,3701,High quality business laptop for daily use.,81,images/business-laptop-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 9,business-laptop-9,1640,1844,High quality business laptop for daily use.,76,images/business-laptop-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Business Laptop 10,business-laptop-10,3958,4499,High quality business laptop for daily use.,57,images/business-laptop-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 1,ultrabook-1,2940,3723,High quality ultrabook for daily use.,41,images/ultrabook-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 2,ultrabook-2,1415,2167,High quality ultrabook for daily use.,42,images/ultrabook-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 3,ultrabook-3,2471,2678,High quality ultrabook for daily use.,53,images/ultrabook-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 4,ultrabook-4,1894,2190,High quality ultrabook for daily use.,36,images/ultrabook-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 5,ultrabook-5,2091,2607,High quality ultrabook for daily use.,30,images/ultrabook-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 6,ultrabook-6,2685,3196,High quality ultrabook for daily use.,34,images/ultrabook-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 7,ultrabook-7,4679,5100,High quality ultrabook for daily use.,25,images/ultrabook-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 8,ultrabook-8,4774,5544,High quality ultrabook for daily use.,42,images/ultrabook-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 9,ultrabook-9,1975,2562,High quality ultrabook for daily use.,71,images/ultrabook-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+Ultrabook 10,ultrabook-10,2649,3099,High quality ultrabook for daily use.,41,images/ultrabook-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,4
+DSLR 1,dslr-1,4346,5068,High quality dslr for daily use.,49,images/dslr-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 2,dslr-2,2332,2557,High quality dslr for daily use.,94,images/dslr-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 3,dslr-3,2694,3336,High quality dslr for daily use.,45,images/dslr-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 4,dslr-4,1651,2082,High quality dslr for daily use.,24,images/dslr-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 5,dslr-5,3173,3807,High quality dslr for daily use.,83,images/dslr-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 6,dslr-6,3851,4283,High quality dslr for daily use.,14,images/dslr-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 7,dslr-7,4100,4895,High quality dslr for daily use.,53,images/dslr-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 8,dslr-8,3448,3672,High quality dslr for daily use.,77,images/dslr-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 9,dslr-9,4796,5088,High quality dslr for daily use.,30,images/dslr-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+DSLR 10,dslr-10,2698,3376,High quality dslr for daily use.,21,images/dslr-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 1,mirrorless-1,2127,2357,High quality mirrorless for daily use.,84,images/mirrorless-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 2,mirrorless-2,1837,2336,High quality mirrorless for daily use.,15,images/mirrorless-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 3,mirrorless-3,2096,2895,High quality mirrorless for daily use.,93,images/mirrorless-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 4,mirrorless-4,3946,4417,High quality mirrorless for daily use.,93,images/mirrorless-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 5,mirrorless-5,1125,1801,High quality mirrorless for daily use.,21,images/mirrorless-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 6,mirrorless-6,3195,3900,High quality mirrorless for daily use.,43,images/mirrorless-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 7,mirrorless-7,3817,4046,High quality mirrorless for daily use.,96,images/mirrorless-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 8,mirrorless-8,3981,4254,High quality mirrorless for daily use.,54,images/mirrorless-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 9,mirrorless-9,2844,3299,High quality mirrorless for daily use.,14,images/mirrorless-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Mirrorless 10,mirrorless-10,3765,4330,High quality mirrorless for daily use.,16,images/mirrorless-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 1,action-camera-1,1823,2028,High quality action camera for daily use.,30,images/action-camera-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 2,action-camera-2,3120,3538,High quality action camera for daily use.,32,images/action-camera-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 3,action-camera-3,1027,1280,High quality action camera for daily use.,74,images/action-camera-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 4,action-camera-4,1836,2049,High quality action camera for daily use.,16,images/action-camera-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 5,action-camera-5,1161,1616,High quality action camera for daily use.,86,images/action-camera-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 6,action-camera-6,1202,1572,High quality action camera for daily use.,76,images/action-camera-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 7,action-camera-7,4013,4753,High quality action camera for daily use.,12,images/action-camera-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 8,action-camera-8,4492,4742,High quality action camera for daily use.,71,images/action-camera-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 9,action-camera-9,3324,4067,High quality action camera for daily use.,81,images/action-camera-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Action Camera 10,action-camera-10,1100,1779,High quality action camera for daily use.,35,images/action-camera-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,5
+Android Phone 1,android-phone-1,3306,3563,High quality android phone for daily use.,21,images/android-phone-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 2,android-phone-2,2208,3007,High quality android phone for daily use.,13,images/android-phone-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 3,android-phone-3,2569,2974,High quality android phone for daily use.,27,images/android-phone-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 4,android-phone-4,3522,4109,High quality android phone for daily use.,30,images/android-phone-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 5,android-phone-5,1036,1330,High quality android phone for daily use.,71,images/android-phone-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 6,android-phone-6,1776,2078,High quality android phone for daily use.,10,images/android-phone-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 7,android-phone-7,1160,1529,High quality android phone for daily use.,57,images/android-phone-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 8,android-phone-8,4257,4551,High quality android phone for daily use.,90,images/android-phone-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 9,android-phone-9,1646,2339,High quality android phone for daily use.,63,images/android-phone-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Android Phone 10,android-phone-10,2783,3415,High quality android phone for daily use.,88,images/android-phone-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 1,iphone-1,4894,5191,High quality iphone for daily use.,97,images/iphone-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 2,iphone-2,4461,5036,High quality iphone for daily use.,23,images/iphone-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 3,iphone-3,4372,5021,High quality iphone for daily use.,95,images/iphone-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 4,iphone-4,2861,3507,High quality iphone for daily use.,80,images/iphone-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 5,iphone-5,4347,4899,High quality iphone for daily use.,74,images/iphone-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 6,iphone-6,1624,1863,High quality iphone for daily use.,16,images/iphone-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 7,iphone-7,1932,2392,High quality iphone for daily use.,99,images/iphone-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 8,iphone-8,2751,3529,High quality iphone for daily use.,84,images/iphone-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 9,iphone-9,2429,3015,High quality iphone for daily use.,57,images/iphone-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+iPhone 10,iphone-10,3697,4349,High quality iphone for daily use.,75,images/iphone-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 1,budget-phone-1,3110,3594,High quality budget phone for daily use.,45,images/budget-phone-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 2,budget-phone-2,4564,5252,High quality budget phone for daily use.,94,images/budget-phone-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 3,budget-phone-3,3350,4057,High quality budget phone for daily use.,12,images/budget-phone-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 4,budget-phone-4,2864,3099,High quality budget phone for daily use.,55,images/budget-phone-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 5,budget-phone-5,4726,5267,High quality budget phone for daily use.,79,images/budget-phone-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 6,budget-phone-6,1833,2570,High quality budget phone for daily use.,38,images/budget-phone-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 7,budget-phone-7,1095,1362,High quality budget phone for daily use.,71,images/budget-phone-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 8,budget-phone-8,2385,2913,High quality budget phone for daily use.,50,images/budget-phone-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 9,budget-phone-9,3359,3713,High quality budget phone for daily use.,69,images/budget-phone-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Budget Phone 10,budget-phone-10,2728,2938,High quality budget phone for daily use.,27,images/budget-phone-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,6
+Sofa 1,sofa-1,4193,4988,High quality sofa for daily use.,70,images/sofa-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 2,sofa-2,4683,5214,High quality sofa for daily use.,28,images/sofa-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 3,sofa-3,4964,5339,High quality sofa for daily use.,45,images/sofa-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 4,sofa-4,1440,1872,High quality sofa for daily use.,49,images/sofa-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 5,sofa-5,1614,1929,High quality sofa for daily use.,79,images/sofa-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 6,sofa-6,1688,2197,High quality sofa for daily use.,90,images/sofa-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 7,sofa-7,3895,4590,High quality sofa for daily use.,95,images/sofa-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 8,sofa-8,1249,1977,High quality sofa for daily use.,24,images/sofa-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 9,sofa-9,2289,3067,High quality sofa for daily use.,49,images/sofa-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Sofa 10,sofa-10,2248,2968,High quality sofa for daily use.,42,images/sofa-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 1,dining-table-1,2783,3575,High quality dining table for daily use.,85,images/dining-table-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 2,dining-table-2,1458,1712,High quality dining table for daily use.,57,images/dining-table-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 3,dining-table-3,3069,3731,High quality dining table for daily use.,22,images/dining-table-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 4,dining-table-4,4923,5313,High quality dining table for daily use.,100,images/dining-table-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 5,dining-table-5,1050,1751,High quality dining table for daily use.,47,images/dining-table-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 6,dining-table-6,4730,5514,High quality dining table for daily use.,37,images/dining-table-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 7,dining-table-7,4130,4743,High quality dining table for daily use.,27,images/dining-table-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 8,dining-table-8,4752,5190,High quality dining table for daily use.,88,images/dining-table-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 9,dining-table-9,4628,5372,High quality dining table for daily use.,32,images/dining-table-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Dining Table 10,dining-table-10,1301,2014,High quality dining table for daily use.,49,images/dining-table-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 1,bed-1,3538,3937,High quality bed for daily use.,87,images/bed-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 2,bed-2,3133,3910,High quality bed for daily use.,68,images/bed-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 3,bed-3,4499,5180,High quality bed for daily use.,38,images/bed-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 4,bed-4,1325,1744,High quality bed for daily use.,88,images/bed-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 5,bed-5,2153,2722,High quality bed for daily use.,12,images/bed-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 6,bed-6,1424,2093,High quality bed for daily use.,78,images/bed-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 7,bed-7,4337,4778,High quality bed for daily use.,41,images/bed-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 8,bed-8,2678,3021,High quality bed for daily use.,34,images/bed-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 9,bed-9,1016,1233,High quality bed for daily use.,93,images/bed-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Bed 10,bed-10,3858,4126,High quality bed for daily use.,59,images/bed-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,7
+Cookware Set 1,cookware-set-1,1742,2291,High quality cookware set for daily use.,70,images/cookware-set-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 2,cookware-set-2,1453,2207,High quality cookware set for daily use.,14,images/cookware-set-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 3,cookware-set-3,4935,5338,High quality cookware set for daily use.,53,images/cookware-set-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 4,cookware-set-4,4931,5673,High quality cookware set for daily use.,22,images/cookware-set-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 5,cookware-set-5,2439,3225,High quality cookware set for daily use.,87,images/cookware-set-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 6,cookware-set-6,4841,5274,High quality cookware set for daily use.,52,images/cookware-set-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 7,cookware-set-7,2886,3191,High quality cookware set for daily use.,94,images/cookware-set-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 8,cookware-set-8,2973,3345,High quality cookware set for daily use.,87,images/cookware-set-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 9,cookware-set-9,3892,4519,High quality cookware set for daily use.,48,images/cookware-set-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Cookware Set 10,cookware-set-10,2135,2377,High quality cookware set for daily use.,77,images/cookware-set-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 1,blender-1,3712,4114,High quality blender for daily use.,10,images/blender-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 2,blender-2,1953,2369,High quality blender for daily use.,45,images/blender-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 3,blender-3,1328,1538,High quality blender for daily use.,56,images/blender-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 4,blender-4,3843,4183,High quality blender for daily use.,97,images/blender-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 5,blender-5,4257,4787,High quality blender for daily use.,95,images/blender-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 6,blender-6,3707,3971,High quality blender for daily use.,61,images/blender-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 7,blender-7,1944,2382,High quality blender for daily use.,43,images/blender-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 8,blender-8,2943,3614,High quality blender for daily use.,93,images/blender-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 9,blender-9,1097,1449,High quality blender for daily use.,38,images/blender-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Blender 10,blender-10,3571,3838,High quality blender for daily use.,53,images/blender-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 1,microwave-1,3251,3762,High quality microwave for daily use.,14,images/microwave-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 2,microwave-2,3414,3952,High quality microwave for daily use.,86,images/microwave-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 3,microwave-3,4948,5371,High quality microwave for daily use.,39,images/microwave-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 4,microwave-4,3918,4496,High quality microwave for daily use.,74,images/microwave-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 5,microwave-5,1556,1925,High quality microwave for daily use.,60,images/microwave-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 6,microwave-6,2095,2619,High quality microwave for daily use.,88,images/microwave-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 7,microwave-7,2551,2892,High quality microwave for daily use.,51,images/microwave-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 8,microwave-8,1644,2252,High quality microwave for daily use.,35,images/microwave-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 9,microwave-9,2881,3171,High quality microwave for daily use.,19,images/microwave-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Microwave 10,microwave-10,4036,4348,High quality microwave for daily use.,32,images/microwave-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,8
+Bedsheet 1,bedsheet-1,3593,4124,High quality bedsheet for daily use.,14,images/bedsheet-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 2,bedsheet-2,1950,2203,High quality bedsheet for daily use.,31,images/bedsheet-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 3,bedsheet-3,3557,3996,High quality bedsheet for daily use.,87,images/bedsheet-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 4,bedsheet-4,1330,1983,High quality bedsheet for daily use.,61,images/bedsheet-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 5,bedsheet-5,4266,4828,High quality bedsheet for daily use.,84,images/bedsheet-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 6,bedsheet-6,2524,3053,High quality bedsheet for daily use.,10,images/bedsheet-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 7,bedsheet-7,1081,1452,High quality bedsheet for daily use.,91,images/bedsheet-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 8,bedsheet-8,3516,3895,High quality bedsheet for daily use.,47,images/bedsheet-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 9,bedsheet-9,2411,3161,High quality bedsheet for daily use.,80,images/bedsheet-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Bedsheet 10,bedsheet-10,3882,4280,High quality bedsheet for daily use.,61,images/bedsheet-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 1,pillow-1,3273,3631,High quality pillow for daily use.,87,images/pillow-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 2,pillow-2,3846,4188,High quality pillow for daily use.,32,images/pillow-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 3,pillow-3,2594,2899,High quality pillow for daily use.,76,images/pillow-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 4,pillow-4,4153,4802,High quality pillow for daily use.,98,images/pillow-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 5,pillow-5,1593,2065,High quality pillow for daily use.,11,images/pillow-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 6,pillow-6,1003,1528,High quality pillow for daily use.,31,images/pillow-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 7,pillow-7,2616,3293,High quality pillow for daily use.,86,images/pillow-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 8,pillow-8,3025,3356,High quality pillow for daily use.,97,images/pillow-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 9,pillow-9,4865,5328,High quality pillow for daily use.,71,images/pillow-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Pillow 10,pillow-10,2775,3183,High quality pillow for daily use.,18,images/pillow-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 1,comforter-1,4608,5077,High quality comforter for daily use.,40,images/comforter-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 2,comforter-2,4947,5629,High quality comforter for daily use.,50,images/comforter-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 3,comforter-3,3410,4133,High quality comforter for daily use.,76,images/comforter-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 4,comforter-4,3503,4119,High quality comforter for daily use.,69,images/comforter-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 5,comforter-5,1712,2401,High quality comforter for daily use.,86,images/comforter-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 6,comforter-6,2783,3475,High quality comforter for daily use.,60,images/comforter-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 7,comforter-7,1589,2296,High quality comforter for daily use.,45,images/comforter-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 8,comforter-8,3488,4115,High quality comforter for daily use.,43,images/comforter-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 9,comforter-9,4299,4927,High quality comforter for daily use.,32,images/comforter-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Comforter 10,comforter-10,2167,2430,High quality comforter for daily use.,31,images/comforter-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,9
+Moisturizer 1,moisturizer-1,3836,4454,High quality moisturizer for daily use.,31,images/moisturizer-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 2,moisturizer-2,4164,4846,High quality moisturizer for daily use.,62,images/moisturizer-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 3,moisturizer-3,3374,3861,High quality moisturizer for daily use.,20,images/moisturizer-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 4,moisturizer-4,4160,4662,High quality moisturizer for daily use.,60,images/moisturizer-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 5,moisturizer-5,1841,2587,High quality moisturizer for daily use.,45,images/moisturizer-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 6,moisturizer-6,2361,2852,High quality moisturizer for daily use.,63,images/moisturizer-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 7,moisturizer-7,3828,4362,High quality moisturizer for daily use.,88,images/moisturizer-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 8,moisturizer-8,2625,3124,High quality moisturizer for daily use.,19,images/moisturizer-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 9,moisturizer-9,1628,2280,High quality moisturizer for daily use.,93,images/moisturizer-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Moisturizer 10,moisturizer-10,4835,5131,High quality moisturizer for daily use.,59,images/moisturizer-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 1,face-wash-1,1426,1733,High quality face wash for daily use.,16,images/face-wash-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 2,face-wash-2,4508,5123,High quality face wash for daily use.,67,images/face-wash-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 3,face-wash-3,2093,2617,High quality face wash for daily use.,32,images/face-wash-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 4,face-wash-4,3694,4289,High quality face wash for daily use.,42,images/face-wash-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 5,face-wash-5,1915,2161,High quality face wash for daily use.,68,images/face-wash-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 6,face-wash-6,1212,1596,High quality face wash for daily use.,32,images/face-wash-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 7,face-wash-7,4329,4946,High quality face wash for daily use.,86,images/face-wash-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 8,face-wash-8,3282,4042,High quality face wash for daily use.,75,images/face-wash-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 9,face-wash-9,2036,2673,High quality face wash for daily use.,71,images/face-wash-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Face Wash 10,face-wash-10,2711,3139,High quality face wash for daily use.,81,images/face-wash-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 1,sunscreen-1,3637,4027,High quality sunscreen for daily use.,46,images/sunscreen-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 2,sunscreen-2,3162,3668,High quality sunscreen for daily use.,49,images/sunscreen-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 3,sunscreen-3,3424,3865,High quality sunscreen for daily use.,71,images/sunscreen-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 4,sunscreen-4,1069,1443,High quality sunscreen for daily use.,29,images/sunscreen-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 5,sunscreen-5,2053,2360,High quality sunscreen for daily use.,63,images/sunscreen-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 6,sunscreen-6,2445,2700,High quality sunscreen for daily use.,16,images/sunscreen-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 7,sunscreen-7,4511,5136,High quality sunscreen for daily use.,13,images/sunscreen-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 8,sunscreen-8,4611,5059,High quality sunscreen for daily use.,45,images/sunscreen-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 9,sunscreen-9,2505,3173,High quality sunscreen for daily use.,64,images/sunscreen-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Sunscreen 10,sunscreen-10,2602,3339,High quality sunscreen for daily use.,42,images/sunscreen-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,10
+Foundation 1,foundation-1,1957,2210,High quality foundation for daily use.,51,images/foundation-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 2,foundation-2,1386,1834,High quality foundation for daily use.,44,images/foundation-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 3,foundation-3,2081,2362,High quality foundation for daily use.,38,images/foundation-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 4,foundation-4,1728,2527,High quality foundation for daily use.,64,images/foundation-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 5,foundation-5,3138,3359,High quality foundation for daily use.,17,images/foundation-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 6,foundation-6,3829,4437,High quality foundation for daily use.,73,images/foundation-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 7,foundation-7,4416,4760,High quality foundation for daily use.,45,images/foundation-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 8,foundation-8,1307,2006,High quality foundation for daily use.,99,images/foundation-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 9,foundation-9,3058,3609,High quality foundation for daily use.,65,images/foundation-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Foundation 10,foundation-10,1447,1858,High quality foundation for daily use.,36,images/foundation-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 1,lipstick-1,3327,3749,High quality lipstick for daily use.,61,images/lipstick-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 2,lipstick-2,1528,2060,High quality lipstick for daily use.,23,images/lipstick-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 3,lipstick-3,2277,3068,High quality lipstick for daily use.,93,images/lipstick-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 4,lipstick-4,3574,4152,High quality lipstick for daily use.,35,images/lipstick-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 5,lipstick-5,3082,3785,High quality lipstick for daily use.,60,images/lipstick-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 6,lipstick-6,4629,4871,High quality lipstick for daily use.,34,images/lipstick-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 7,lipstick-7,4162,4618,High quality lipstick for daily use.,78,images/lipstick-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 8,lipstick-8,4325,4865,High quality lipstick for daily use.,75,images/lipstick-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 9,lipstick-9,4473,4741,High quality lipstick for daily use.,34,images/lipstick-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Lipstick 10,lipstick-10,2391,2750,High quality lipstick for daily use.,97,images/lipstick-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 1,mascara-1,1762,2037,High quality mascara for daily use.,70,images/mascara-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 2,mascara-2,3887,4446,High quality mascara for daily use.,79,images/mascara-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 3,mascara-3,2449,2681,High quality mascara for daily use.,36,images/mascara-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 4,mascara-4,3899,4296,High quality mascara for daily use.,96,images/mascara-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 5,mascara-5,1479,1735,High quality mascara for daily use.,76,images/mascara-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 6,mascara-6,2537,3294,High quality mascara for daily use.,63,images/mascara-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 7,mascara-7,3392,3902,High quality mascara for daily use.,15,images/mascara-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 8,mascara-8,1728,2441,High quality mascara for daily use.,76,images/mascara-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 9,mascara-9,4583,5324,High quality mascara for daily use.,43,images/mascara-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Mascara 10,mascara-10,3173,3712,High quality mascara for daily use.,66,images/mascara-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,11
+Shampoo 1,shampoo-1,2959,3328,High quality shampoo for daily use.,91,images/shampoo-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 2,shampoo-2,3970,4293,High quality shampoo for daily use.,54,images/shampoo-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 3,shampoo-3,1135,1534,High quality shampoo for daily use.,18,images/shampoo-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 4,shampoo-4,2897,3165,High quality shampoo for daily use.,93,images/shampoo-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 5,shampoo-5,4691,5376,High quality shampoo for daily use.,66,images/shampoo-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 6,shampoo-6,3560,4008,High quality shampoo for daily use.,37,images/shampoo-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 7,shampoo-7,1565,1814,High quality shampoo for daily use.,20,images/shampoo-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 8,shampoo-8,3177,3496,High quality shampoo for daily use.,54,images/shampoo-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 9,shampoo-9,2539,3084,High quality shampoo for daily use.,98,images/shampoo-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Shampoo 10,shampoo-10,1927,2577,High quality shampoo for daily use.,69,images/shampoo-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 1,conditioner-1,2818,3433,High quality conditioner for daily use.,54,images/conditioner-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 2,conditioner-2,2124,2506,High quality conditioner for daily use.,12,images/conditioner-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 3,conditioner-3,3332,4088,High quality conditioner for daily use.,13,images/conditioner-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 4,conditioner-4,1643,1862,High quality conditioner for daily use.,67,images/conditioner-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 5,conditioner-5,2059,2739,High quality conditioner for daily use.,66,images/conditioner-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 6,conditioner-6,1750,2023,High quality conditioner for daily use.,98,images/conditioner-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 7,conditioner-7,3122,3331,High quality conditioner for daily use.,88,images/conditioner-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 8,conditioner-8,2754,2985,High quality conditioner for daily use.,24,images/conditioner-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 9,conditioner-9,2416,3181,High quality conditioner for daily use.,29,images/conditioner-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Conditioner 10,conditioner-10,3866,4385,High quality conditioner for daily use.,95,images/conditioner-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 1,hair-oil-1,2922,3520,High quality hair oil for daily use.,40,images/hair-oil-1.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 2,hair-oil-2,4543,4796,High quality hair oil for daily use.,59,images/hair-oil-2.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 3,hair-oil-3,3277,3863,High quality hair oil for daily use.,12,images/hair-oil-3.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 4,hair-oil-4,2742,3435,High quality hair oil for daily use.,25,images/hair-oil-4.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 5,hair-oil-5,3569,4075,High quality hair oil for daily use.,68,images/hair-oil-5.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 6,hair-oil-6,1237,1593,High quality hair oil for daily use.,80,images/hair-oil-6.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 7,hair-oil-7,1188,1911,High quality hair oil for daily use.,48,images/hair-oil-7.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 8,hair-oil-8,4386,5120,High quality hair oil for daily use.,49,images/hair-oil-8.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 9,hair-oil-9,3366,3747,High quality hair oil for daily use.,91,images/hair-oil-9.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12
+Hair Oil 10,hair-oil-10,3243,3844,High quality hair oil for daily use.,96,images/hair-oil-10.jpg,2025-06-08 15:47:58,2025-06-08 15:47:58,12

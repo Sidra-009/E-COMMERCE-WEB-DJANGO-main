@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CatchItQuick - Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+    
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+    
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+    <style>
+        :root {
+            --primary-color: #ff9900;
+            --secondary-color: #232f3e;
+            --light-color: #f2f2f2;
+            --dark-color: #131921;
+        }
+        
+        body {
+            font-family: 'Amazon Ember', Arial, sans-serif;
+            background-color: #fafafa;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .search-input {
+            width: 200px;
+        }
+
+        .search-btn {
+            white-space: nowrap;
+        }
+
+        .navbar {
+            background-color: var(--dark-color) !important;
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: white !important;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+        }
+        
+        /* Video Hero Section Styles */
+        .video-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+        
+        .dropdown-menu {
+            background-color: var(--secondary-color);
+            border: none;
+        }
+        
+        .dropdown-item {
+            color: white !important;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--dark-color);
+            font-weight: bold;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e88a00;
+            border-color: #e88a00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .service-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x500') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .video-hero {
+                height: 50vh;
+                min-height: 300px;
+            }
+            
+            .search-input {
+                width: 150px;
+            }
+            
+            .service-header {
+                height: 200px;
+            }
+        }
+        /* Add this to your existing CSS */
+    .footer {
+        background-color: #2e2929;;
+        color: white;
+    }
+    
+    .footer h2 {
+        color: white;
+    }
+    
+    .footer p,
+    .footer a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .footer a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-social a {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .footer-social a:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .copyright {
+        background-color: #2e2929;; /* Slightly darker shade for contrast */
+        color: white;
+    }
+    
+    .custom-btn {
+        background-color: var(--dark-color);
+        color: white;
+    }
+    
+    .custom-btn:hover {
+        background-color: #232f3e;
+        color: white;
+    }
+    
+    </style>
+</head>
+
+<body>
+        <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="{% url 'index' %}" class="navbar-brand">Catch<span>It</span>Quick</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'services' %}" class="nav-item nav-link active">Services</a>
+                    <a href="{% url 'products' %}" class="nav-item nav-link">Products</a>
+                    <a href="{% url 'team' %}" class="nav-item nav-link">Our Team</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                </div>
+
+                    
+                    {% if user.is_authenticated %}
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user-circle"></i> Account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right account-dropdown">
+                            {% if user.is_superuser or user.is_staff %}
+                                <a href="{% url 'admin:index' %}" class="dropdown-item"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                            {% else %}
+                                <a href="{% url 'dashboard' %}" class="dropdown-item"><i class="fas fa-user"></i> My Profile</a>
+                                <a href="{% url 'orders' %}" class="dropdown-item"><i class="fas fa-shopping-bag"></i> My Orders</a>
+                            {% endif %}
+                            <div class="dropdown-divider"></div>
+                            <a href="{% url 'logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <a href="{% url 'cart' %}" class="nav-item nav-link">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span class="badge badge-light ml-1">3</span>
+                    </a>
+                    {% else %}
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user-circle"></i> Account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right account-dropdown">
+                            <a href="{% url 'login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Login</a>
+                            <a href="{% url 'register' %}" class="dropdown-item"><i class="fas fa-user-plus"></i> Register</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+    <!-- Video Hero Section -->
+    <section class="video-hero">
+        <video autoplay muted loop class="video-background">
+            <source src="https://videos.pexels.com/video-files/4169470/4169470-sd_640_360_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container">
+            <h1 class="display-4 text-white">Our Services</h1>
+            <p class="lead text-white">We provide the best services to meet your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Service 1 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-shipping-fast service-icon"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Get your products delivered within 24 hours in major cities and 2-3 days in other locations.</p>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-exchange-alt service-icon"></i>
+                    <h4>Easy Returns</h4>
+                    <p>Not satisfied? Return within 30 days for a full refund or exchange, no questions asked.</p>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-headset service-icon"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Our customer service team is available round the clock to assist you with any queries.</p>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h4>Secure Payments</h4>
+                    <p>All transactions are encrypted and secure with multiple payment options available.</p>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-gift service-icon"></i>
+                    <h4>Gift Services</h4>
+                    <p>Special gift wrapping and personalized messages available for all your purchases.</p>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="col">
+                <div class="card service-card text-center p-4">
+                    <i class="fas fa-tags service-icon"></i>
+                    <h4>Price Match</h4>
+                    <p>Found it cheaper elsewhere? We'll match the price and give you 10% of the difference.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-contact">
+                                <h2>Our Address</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/SachTechSol/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-link">
+                                <h2>Quick Links</h2>
+                                <a href="">Terms of use</a>
+                                <a href="">Privacy policy</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.
+                        </p>
+                        <div class="form">
+                            <input class="form-control" placeholder="Email goes here">
+                            <button class="btn custom-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <a href="#">Catch it Quick</a>, All Right Reserved.</p>
+                <p>Designed By <a href="https://htmlcodex.com">Sidra Bibi</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+</body>
+</html>

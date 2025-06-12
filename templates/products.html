@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Products</title>
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+    <div class="products">
+        {% for product in products %}
+            <div class="product-card">
+                <h3>{{ product.name }}</h3>
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                <p>Price: Rs {{ product.price }}</p>
+                <p>{{ product.description|truncatewords:15 }}</p>
+                <button>Add to Cart</button>
+            </div>
+        {% empty %}
+            <p>No products available.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

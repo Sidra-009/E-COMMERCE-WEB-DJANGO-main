@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Cartify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Main Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        
+        /* Search Box Styles */
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 50px;
+            overflow: hidden;
+        }
+        
+        .search-box .form-control {
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+        }
+        
+        .search-box .btn {
+            border-radius: 0 50px 50px 0;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            border: none;
+        }
+        
+        /* Product Card Styles */
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .product-card .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+        
+        .product-card .card-title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        
+        .product-card .card-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .product-card .card-text {
+            font-weight: bold;
+            color: #4f46e5;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        
+        .product-card .btn-group {
+            margin-top: auto;
+        }
+        
+        /* Pagination Styles */
+        .pagination .page-item.active .page-link {
+            background-color: #4f46e5;
+            border-color: #4f46e5;
+        }
+        
+        .pagination .page-link {
+            color: #4f46e5;
+            border: 1px solid #dee2e6;
+            padding: 8px 16px;
+        }
+        
+        .pagination .page-link:hover {
+            color: #4f46e5;
+            background-color: #eef2ff;
+        }
+        
+        /* No Results Styles */
+        .no-results {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .no-results h4 {
+            color: #4f46e5;
+            margin-bottom: 15px;
+        }
+        
+        .no-results .suggestions {
+            text-align: left;
+            max-width: 400px;
+            margin: 20px auto 0;
+        }
+        
+        /* Toast Notification */
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1100;
+        }
+        
+        .toast {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .toast-success {
+            background-color: #4f46e5;
+            color: white;
+        }
+        
+        .toast-error {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .product-card img {
+                height: 150px;
+            }
+            
+            .search-box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Include your actual navbar here) -->
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">
+                    {% if products %}
+                        Found {{ result_count }} result{% if result_count > 1 %}s{% endif %} for "{{ query }}"
+                    {% else %}
+                        No results found for "{{ query }}"
+                    {% endif %}
+                </h2>
+                
+                <!-- Search Box -->
+                <div class="search-box mb-4">
+                    <form action="{% url 'search_view' %}" method="get" class="d-flex">
+                        <input type="text" name="q" class="form-control" 
+                               placeholder="Search again..." value="{{ query }}">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </form>
+                </div>
+                
+                {% if products %}
+                <div class="row">
+                    {% for product in products %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 product-card">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
+                                </h5>
+                                <p class="card-text">${{ product.price }}</p>
+                                <div class="btn-group">
+                                    <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-outline-primary">
+                                        View Details
+                                    </a>
+                                    <button class="btn btn-sm btn-primary add-to-cart" data-product-id="{{ product.id }}">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <!-- Pagination -->
+                {% if products.has_other_pages %}
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        {% if products.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?q={{ query }}&page={{ products.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link">&laquo;</span>
+                        </li>
+                        {% endif %}
+                        
+                        {% for i in products.paginator.page_range %}
+                        {% if products.number == i %}
+                        <li class="page-item active">
+                            <span class="page-link">{{ i }}</span>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?q={{ query }}&page={{ i }}">{{ i }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        
+                        {% if products.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?q={{ query }}&page={{ products.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link">&raquo;</span>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+                {% endif %}
+                
+                {% else %}
+                <div class="no-results">
+                    <h4>No products found</h4>
+                    <p>We couldn't find any products matching "{{ query }}". Try different keywords.</p>
+                    <div class="suggestions mt-3">
+                        <h5>Suggestions:</h5>
+                        <ul>
+                            <li>Check your spelling</li>
+                            <li>Try more general terms</li>
+                            <li>Browse our <a href="{% url 'categories' %}">categories</a></li>
+                            <li>Check out our <a href="{% url 'featured' %}">featured products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle add to cart buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    addToCart(productId);
+                });
+            });
+
+            // Function to add item to cart
+            function addToCart(productId) {
+                fetch('/add-to-cart/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken'),
+                    },
+                    body: JSON.stringify({
+                        product_id: productId,
+                        quantity: 1
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        updateCartCount(data.cart_count);
+                        showToast('Item added to cart!', 'success');
+                    } else {
+                        showToast(data.message || 'Error adding to cart', 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showToast('Error adding to cart', 'error');
+                });
+            }
+
+            // Helper function to get CSRF token
+            function getCookie(name) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+
+            // Update cart count in navbar
+            function updateCartCount(count) {
+                const cartBadge = document.querySelector('.cart-badge');
+                if (cartBadge) {
+                    cartBadge.textContent = count;
+                }
+            }
+
+            // Show toast notification
+            function showToast(message, type = 'success') {
+                const toastContainer = document.querySelector('.toast-container');
+                const toastEl = document.createElement('div');
+                toastEl.className = `toast toast-${type} show`;
+                toastEl.setAttribute('role', 'alert');
+                toastEl.setAttribute('aria-live', 'assertive');
+                toastEl.setAttribute('aria-atomic', 'true');
+                
+                toastEl.innerHTML = `
+                    <div class="toast-body d-flex justify-content-between">
+                        <span>${message}</span>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                `;
+                
+                toastContainer.appendChild(toastEl);
+                
+                // Auto-remove after 3 seconds
+                setTimeout(() => {
+                    toastEl.classList.remove('show');
+                    setTimeout(() => toastEl.remove(), 300);
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
