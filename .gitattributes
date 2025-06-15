@@ -1,2 +1,15 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ignore static files from language statistics
+/static/** linguist-vendored
+
+# Ignore all HTML files from language statistics
+*.html linguist-vendored
+
+# Ignore all CSS files from language statistics
+*.css linguist-vendored
+
+# Ignore all JavaScript files from language statistics
+*.js linguist-vendored
+
+# Ignore template folders (if you have frontend-heavy files here)
+template/** linguist-vendored
+templates/** linguist-vendored
