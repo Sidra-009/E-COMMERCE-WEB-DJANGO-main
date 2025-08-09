@@ -73,51 +73,50 @@ This project provides a secure, user-friendly online shopping experience featuri
 
 ---
 
+```markdown
 ## 🗂️ Project Structure
 
 Ecommerce_project/
 │
-├── ecommerce_project/ # Main project configuration
-│ ├── init.py
-│ ├── settings.py # Database & app settings
-│ ├── urls.py # Main URL routing
-│ ├── asgi.py # ASGI config (deployment)
-│ └── wsgi.py # WSGI config (deployment)
+├── ecommerce_project/         # Main project configuration
+│   ├── __init__.py
+│   ├── settings.py            # Database & app settings
+│   ├── urls.py                # Main URL routing
+│   ├── asgi.py                # ASGI config (deployment)
+│   └── wsgi.py                # WSGI config (deployment)
 │
-├── shop/ # Main ecommerce app
-│ ├── migrations/ # Database migration files
-│ ├── init.py
-│ ├── admin.py # Admin dashboard customizations
-│ ├── apps.py # App config
-│ ├── models.py # Database models
-│ ├── views.py # View functions/classes
-│ ├── forms.py # Django forms
-│ └── urls.py # App-specific URLs
+├── shop/                      # Main ecommerce app
+│   ├── migrations/            # Database migration files
+│   ├── __init__.py
+│   ├── admin.py               # Admin dashboard customizations
+│   ├── apps.py                # App config
+│   ├── models.py              # Database models
+│   ├── views.py               # View functions/classes
+│   ├── forms.py               # Django forms
+│   └── urls.py                # App-specific URLs
 │
-├── templates/ # HTML templates
-│ ├── base.html # Base template for inheritance
-│ ├── home.html # Homepage
-│ ├── product_list.html # Product catalog
-│ ├── product_detail.html # Product details
-│ ├── cart.html # Shopping cart
-│ ├── checkout.html # Checkout page
-│ ├── login.html # Login page
-│ └── dashboard.html # User dashboard
+├── templates/                 # HTML templates
+│   ├── base.html              # Base template for inheritance
+│   ├── home.html              # Homepage
+│   ├── product_list.html      # Product catalog
+│   ├── product_detail.html    # Product details
+│   ├── cart.html              # Shopping cart
+│   ├── checkout.html          # Checkout page
+│   ├── login.html             # Login page
+│   └── dashboard.html         # User dashboard
 │
-├── static/ # Static files (CSS, JS, Images)
-│ ├── css/
-│ │ └── style.css # Custom styles
-│ ├── js/
-│ │ └── scripts.js # Optional scripts
-│ └── images/ # Product and banner images
+├── static/                    # Static files (CSS, JS, Images)
+│   ├── css/
+│   │   └── style.css          # Custom styles
+│   ├── js/
+│   │   └── scripts.js         # Optional scripts
+│   └── images/                # Product and banner images
 │
-├── media/ # Uploaded media files (e.g., product images)
+├── media/                     # Uploaded media files (e.g., product images)
 │
-├── manage.py # Django CLI utility
+├── manage.py                  # Django CLI utility
 │
-└── requirements.txt # Python package dependencies
-
-text
+└── requirements.txt           # Python package dependencies
 
 ---
 
