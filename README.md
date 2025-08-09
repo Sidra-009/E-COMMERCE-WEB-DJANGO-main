@@ -118,11 +118,10 @@ Ecommerce_project/
 │
 └── requirements.txt           # Python package dependencies
 
----
 
-## 🚀 Installation & Setup
+🚀 Installation & Setup
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/cartify-ecommerce.git
    cd cartify-ecommerce
