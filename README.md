@@ -74,7 +74,7 @@ This project provides a secure, user-friendly online shopping experience featuri
 ---
 
 ```markdown
-## 🗂️ Project Structure
+ 🗂️ Project Structure
 
 Ecommerce_project/
 │
@@ -122,7 +122,7 @@ Ecommerce_project/
 🚀 Installation & Setup
 
 1. Clone the repository:
-   ```bash
+   bash
    git clone https://github.com/your-username/cartify-ecommerce.git
    cd cartify-ecommerce
 Create and activate a virtual environment:
@@ -156,14 +156,6 @@ python manage.py runserver
 Access the site at:
 http://127.0.0.1:8000/
 
-🔮 Future Enhancements
-💳 Real-time payment gateway integration
-
-🌐 Multi-language support
-
-⭐ Product reviews and recommendations
-
-📱 Mobile app API integration using Django REST Framework
 
 🙌 Acknowledgements
 Special thanks to Sir Muneeb for invaluable guidance, and to peers and family for continuous support. Gratitude to Sir Syed University of Engineering and Technology for excellent resources and learning opportunities.
