@@ -1,6 +1,6 @@
 # 🛒 Cartify - Ecommerce Platform
 
-## 🙏 All praise to Allah Almighty — the source of all strength and guidance.
+##  All praise to Allah Almighty — the source of all strength and guidance.
 
 ---
 
