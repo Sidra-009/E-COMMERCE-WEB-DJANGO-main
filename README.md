@@ -164,7 +164,7 @@ Special thanks to Sir Muneeb for invaluable guidance, and to peers and family fo
 This project is intended for academic purposes. Please contact the author for commercial use inquiries.
 
 Author:
-👩‍💻 Sidra Bib (009)
+👩‍💻 Sidra Saqlain
 Sir Syed University of Engineering and Technology
 
 “Challenges are what make life interesting; overcoming them is what makes life meaningful.”
