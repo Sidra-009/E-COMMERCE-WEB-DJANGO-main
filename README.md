@@ -118,14 +118,24 @@ python manage.py createsuperuser
 python manage.py runserver
 Access: http://127.0.0.1:8000/
 
+```
 
-📸 Screenshots
-🏠 Home Page
-🛍️ Product Catalog
-🖼️ Product Detail & Cart
-📝 Checkout Page
-🛠️ Admin Dashboard
-📚 Learnings & Reflections
+## 📸 Screenshots
+
+<details>
+<summary>🔑 Authentication (Login & Signup)</summary>
+
+### 🟢 Login Page
+![Login Page](![WhatsApp Image 2025-10-01 at 11 10 00_d8c075b0](https://github.com/user-attachments/assets/157e0495-c653-4e5e-9dbe-ed12b1da9381)
+)
+
+### 🟢 Signup / Registration Page
+![Signup Page](![WhatsApp Image 2025-10-01 at 11 10 00_8fdde6db](https://github.com/user-attachments/assets/e35ba6b4-c74f-45a9-8649-edf72d23c002)
+)
+
+\
+</details>
+
 
 ⚡ Challenges:
 
